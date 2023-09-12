@@ -9,6 +9,9 @@ import Links from "./ui/textslider/Links";
 type Props = {};
 
 export default function Section1({}: Props) {
+  const [mounted, setMounted] = useState(false);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [slideIndex, setSlideIndex] = useState(0);
   const [start, setStart] = useState("");
 
@@ -59,16 +62,29 @@ export default function Section1({}: Props) {
   // const next = () => {
   //   setSlideIndex(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
   // };
-  useEffect(() => {
-    setStart("");
-    //    alert();
-  }, []);
+  // useEffect(() => {
+  //   setStart("");
+  //   //    alert();
+  // }, []);
   // useEffect(() => {
   //   const slideInterval = setInterval(next, 7000);
   //   return () => {
   //     clearInterval(slideInterval);
   //   };
   // }, [slideIndex, next]);
+  // if (!mounted) return <></>;
+
+  const nextImage = () => {
+    setSlideIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(nextImage, 3000); // Change image every 3 seconds (adjust as needed)
+
+    return () => {
+      clearInterval(intervalId); // Clean up the interval when the component unmounts
+    };
+  }, []);
   return (
     <div className="z-50   flex flex-col lg:flex-row sm:mx-8 mx-3 h-auto">
       <div className="flex flex-col relative  flex-1">
