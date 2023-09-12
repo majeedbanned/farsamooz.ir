@@ -68,6 +68,7 @@ export default async function Root({
           {/* snap-y snap-mandatory h-screen overflow-y-scroll */}
           {/* {authModal} */}
           <Image
+            placeholder="blur"
             className="z-10 absolute -top-44 -left-44"
             alt="Picture of the author"
             src={ellipse}

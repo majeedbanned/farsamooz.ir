@@ -60,6 +60,7 @@ export default function AppSlider2({}: Props) {
         >
           {/* {slides[slideIndex].image} */}
           <Image
+            placeholder="blur"
             src={slides[slideIndex].image}
             alt=""
             className="object-contain max-h-[630px]"

@@ -77,6 +77,7 @@ export default function Section1({}: Props) {
           className="  flex-1 grid-flow-row  h-[550px] "
         >
           <Image
+            placeholder="blur"
             className=" sm:m-6   "
             src={slides[slideIndex]?.image || ""}
             // src={orange}

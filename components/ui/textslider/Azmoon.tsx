@@ -136,6 +136,7 @@ export default function Azmoon({}: Props) {
         >
           {/* {slides[slideIndex].image} */}
           <Image
+            placeholder="blur"
             src={slides[slideIndex]?.image || ""}
             alt=""
             className="object-contain  "

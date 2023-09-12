@@ -104,6 +104,7 @@ export default function Events({}: Props) {
         >
           {/* {slides[slideIndex].image} */}
           <Image
+            placeholder="blur"
             src={slides[slideIndex]?.image || ""}
             alt=""
             className="object-contain  "
