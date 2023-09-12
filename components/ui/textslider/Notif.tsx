@@ -94,7 +94,7 @@ export default function Notif({}: Props) {
         >
           {/* {slides[slideIndex].image} */}
           <Image
-            placeholder="blur"
+            //placeholder="blur"
             src={slides[slideIndex].image}
             alt=""
             className="object-contain  "

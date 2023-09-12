@@ -68,15 +68,17 @@ export default async function Root({
           {/* snap-y snap-mandatory h-screen overflow-y-scroll */}
           {/* {authModal} */}
           <Image
-            placeholder="blur"
+            //placeholder="blur"
+            blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+             "
             className="z-10 absolute -top-44 -left-44"
             alt="Picture of the author"
             src={ellipse}
           ></Image>
-          <Navbar
+          {/* <Navbar
           // navmenu={dictionary.navbar}
           // siteLogo={dictionary.logo}
-          ></Navbar>
+          ></Navbar> */}
           {children}
         </div>
         {/* </Providers> */}

@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Links from "./Links";
@@ -50,12 +49,13 @@ function getBodyDirection() {
   return computedStyle.direction;
 }
 export default function TextSlider({}: Props) {
-  const [slideIndex, setSlideIndex] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(1);
 
   const next = () => {
     setSlideIndex(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
   };
   useEffect(() => {
+    // alert();
     const slideInterval = setInterval(next, 7000);
     return () => {
       clearInterval(slideInterval);
@@ -71,7 +71,7 @@ export default function TextSlider({}: Props) {
         <div className="w-full  ">
           <AnimatePresence>
             <motion.div
-              key={slideIndex}
+              key={"a" + slideIndex}
               variants={variants}
               custom={getBodyDirection()}
               initial="enter"
@@ -81,7 +81,7 @@ export default function TextSlider({}: Props) {
             >
               <motion.h2
                 className=" flex text-[#098dbd] items-center  w-full space-y-4 justify-end sm:text-3xl text-2xl"
-                key={slideIndex}
+                key={"c" + slideIndex}
                 initial="enter"
                 animate="center"
                 exit="exit"
@@ -94,7 +94,7 @@ export default function TextSlider({}: Props) {
 
               <motion.h2
                 className=" flex text-slate-600 items-center mx-1 text-right my-2 justify-end  sm:text-xl  text-md"
-                key={slideIndex}
+                key={"d" + slideIndex}
                 initial="enter"
                 animate="center"
                 exit="exit"
@@ -141,7 +141,7 @@ export default function TextSlider({}: Props) {
             className={`  ${
               slideIndex === i ? "p-1 bg-orange-500" : ""
             }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-slate-400`}
-            key={slide.id}
+            key={"b" + slide.id}
           ></div>
         ))}
       </div>

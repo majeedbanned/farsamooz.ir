@@ -10,6 +10,8 @@ type Props = {};
 
 export default function Section1({}: Props) {
   const [slideIndex, setSlideIndex] = useState(0);
+  const [start, setStart] = useState("");
+
   const slides = [
     {
       imagew: 530,
@@ -54,16 +56,19 @@ export default function Section1({}: Props) {
     },
   ];
 
-  const next = () => {
-    setSlideIndex(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
-  };
-
+  // const next = () => {
+  //   setSlideIndex(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
+  // };
   useEffect(() => {
-    const slideInterval = setInterval(next, 7000);
-    return () => {
-      clearInterval(slideInterval);
-    };
-  }, [slideIndex]);
+    setStart("");
+    //    alert();
+  }, []);
+  // useEffect(() => {
+  //   const slideInterval = setInterval(next, 7000);
+  //   return () => {
+  //     clearInterval(slideInterval);
+  //   };
+  // }, [slideIndex, next]);
   return (
     <div className="z-50   flex flex-col lg:flex-row sm:mx-8 mx-3 h-auto">
       <div className="flex flex-col relative  flex-1">
@@ -77,7 +82,7 @@ export default function Section1({}: Props) {
           className="  flex-1 grid-flow-row  h-[550px] "
         >
           <Image
-            placeholder="blur"
+            //placeholder="blur"
             className=" sm:m-6   "
             src={slides[slideIndex]?.image || ""}
             // src={orange}
@@ -101,8 +106,8 @@ export default function Section1({}: Props) {
         </div>
       </div>
       <div className="flex flex-col border-spacing-0 gap-6 flex-1">
-        <TextSlider></TextSlider>
-        <Links></Links>
+        {/* <TextSlider></TextSlider> */}
+        {/* <Links></Links> */}
 
         {/* <div className="mb-8  rtl:text-right text-red-600 dark:text-white "></div> */}
       </div>

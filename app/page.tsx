@@ -19,20 +19,22 @@ import Barname from "@/components/ui/textslider/Barname";
 import Bankf from "@/components/ui/textslider/Bankf";
 import Info from "@/components/ui/textslider/Info";
 import Links from "@/components/ui/textslider/Links";
+import ClientOnly from "@/ClientOnly";
 
 export default async function IndexPage() {
   return (
     <div className="z-50  relative flex flex-col  ">
+      {/* <ClientOnly> */}
       <Section1></Section1>
-
-      <section id="Features">
+      {/* </ClientOnly> */}
+      {/* <section id="Features">
         <Features></Features>
-      </section>
+      </section> */}
 
-      <section id="Azmoon">
+      {/* <section id="Azmoon">
         <Azmoon></Azmoon>
-      </section>
-      <section id="Daftar">
+      </section> */}
+      {/*  <section id="Daftar">
         <Daftar></Daftar>
       </section>
       <section id="Notif">
@@ -70,17 +72,7 @@ export default async function IndexPage() {
 
       <section id="Info">
         <Info></Info>
-      </section>
-      {/* <section id="AppSlider" className="snap-center">
-        <AppSlider2></AppSlider2>
       </section> */}
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div>
   );
 }
