@@ -79,7 +79,7 @@ export default function Section1({}: Props) {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(nextImage, 3000); // Change image every 3 seconds (adjust as needed)
+    const intervalId = setInterval(nextImage, 6000); // Change image every 3 seconds (adjust as needed)
 
     return () => {
       clearInterval(intervalId); // Clean up the interval when the component unmounts
@@ -122,8 +122,8 @@ export default function Section1({}: Props) {
         </div>
       </div>
       <div className="flex flex-col border-spacing-0 gap-6 flex-1">
-        {/* <TextSlider></TextSlider> */}
-        {/* <Links></Links> */}
+        <TextSlider></TextSlider>
+        <Links></Links>
 
         {/* <div className="mb-8  rtl:text-right text-red-600 dark:text-white "></div> */}
       </div>

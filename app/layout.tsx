@@ -75,10 +75,10 @@ export default async function Root({
             alt="Picture of the author"
             src={ellipse}
           ></Image>
-          {/* <Navbar
+          <Navbar
           // navmenu={dictionary.navbar}
           // siteLogo={dictionary.logo}
-          ></Navbar> */}
+          ></Navbar>
           {children}
         </div>
         {/* </Providers> */}

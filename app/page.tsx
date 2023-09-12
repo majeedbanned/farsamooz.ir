@@ -27,14 +27,14 @@ export default async function IndexPage() {
       {/* <ClientOnly> */}
       <Section1></Section1>
       {/* </ClientOnly> */}
-      {/* <section id="Features">
+      <section id="Features">
         <Features></Features>
-      </section> */}
+      </section>
 
-      {/* <section id="Azmoon">
+      <section id="Azmoon">
         <Azmoon></Azmoon>
-      </section> */}
-      {/*  <section id="Daftar">
+      </section>
+      <section id="Daftar">
         <Daftar></Daftar>
       </section>
       <section id="Notif">
@@ -72,7 +72,7 @@ export default async function IndexPage() {
 
       <section id="Info">
         <Info></Info>
-      </section> */}
+      </section>
     </div>
   );
 }
