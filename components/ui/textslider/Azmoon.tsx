@@ -44,7 +44,7 @@ const slides = [
     buttonTitle: "order",
     image: "/images/آزمون آنلاین نرم افزار مدارس پارس آموز3.png",
   },
-  ,
+
   {
     imagew: 400,
     imageh: 400,
@@ -55,7 +55,7 @@ const slides = [
     buttonTitle: "order",
     image: "/images/آزمون آنلاین نرم افزار مدارس پارس آموز4.png",
   },
-  ,
+
   {
     imagew: 400,
     imageh: 400,
@@ -75,17 +75,59 @@ function getBodyDirection() {
   return computedStyle.direction;
 }
 export default function Azmoon({}: Props) {
+  const [startX, setStartX] = useState<number | null>(null);
+  const [currentX, setCurrentX] = useState<number | null>(null);
+  const [isSliding, setIsSliding] = useState(false);
+  const [swipeDirection, setSwipeDirection] = useState<string | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setStartX(e.touches[0].clientX);
+    setCurrentX(e.touches[0].clientX);
+    setIsSliding(true);
+    setSwipeDirection(null);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isSliding) return;
+
+    setCurrentX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!isSliding) return;
+
+    const deltaX = currentX! - startX!;
+
+    // You can adjust the threshold to determine when to trigger the slide
+    const threshold = 50;
+
+    if (deltaX < -threshold) {
+      // User has swiped left
+      setSwipeDirection("left");
+      next();
+    } else if (deltaX > threshold) {
+      // User has swiped right
+      pre();
+      setSwipeDirection("right");
+    }
+
+    // Reset the state if not enough swipe to either side
+    setIsSliding(false);
+  };
+
   const [slideIndex, setSlideIndex] = useState(0);
 
   const next = () => {
-    setSlideIndex(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
+    setSlideIndex((slideIndex) =>
+      slideIndex === slides.length - 1 ? 0 : slideIndex + 1
+    );
   };
-  // useEffect(() => {
-  //   const slideInterval = setInterval(next, 4000);
-  //   return () => {
-  //     clearInterval(slideInterval);
-  //   };
-  // }, [slideIndex]);
+  const pre = () => {
+    setSlideIndex((slideIndex) =>
+      slideIndex === 0 ? slides.length - 1 : slideIndex - 1
+    );
+  };
+
   return (
     <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-slate-100  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
@@ -117,9 +159,10 @@ export default function Azmoon({}: Props) {
         </div>
 
         <div className="  flex p-2  items-center justify-center flex-row  lg:flex-col gap-5">
+          {slideIndex}
           {slides.map((slide, i) => (
             <div
-              onClick={() => setSlideIndex(i)}
+              onClick={() => setSlideIndex(Number(slide?.id) - 1 || 0)}
               className={`  ${
                 slideIndex === i ? "p-1 bg-orange-500" : ""
               }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-slate-400`}
@@ -142,7 +185,9 @@ export default function Azmoon({}: Props) {
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}
-            onTouchMove={next}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           ></Image>
         </motion.div>
       </div>
