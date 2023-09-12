@@ -22,7 +22,7 @@ sm:mx-0 sm:gap-0
         <a
           className="
           border-[#009c87] p-1 rounded-xl border hover:bg-[#009c8729] 
-          
+          href='https://cafebazaar.ir/app/com.arsis.parsamooz'
           DownloadBox___StyledA-sc-t74c4l-5 eHIRVF"
           target="_blank"
         >
