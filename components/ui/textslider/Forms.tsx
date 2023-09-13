@@ -24,7 +24,7 @@ const slides = [
       "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
     buttonTitle: "order",
     image:
-      "/images/فرم ساز نرم افزار مدارس اتوماسیون هوشمند پارس آموز1" + ".png",
+      "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز1" + ".png",
   },
   {
     imagew: 400,
@@ -35,7 +35,7 @@ const slides = [
       "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
     buttonTitle: "order",
     image:
-      "/images/فرم ساز نرم افزار مدارس اتوماسیون هوشمند پارس آموز2" + ".png",
+      "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز2" + ".png",
   },
   {
     imagew: 400,
@@ -46,9 +46,9 @@ const slides = [
       "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
     buttonTitle: "order",
     image:
-      "/images/فرم ساز نرم افزار مدارس اتوماسیون هوشمند پارس آموز3" + ".png",
+      "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز3" + ".png",
   },
-  ,
+
   {
     imagew: 400,
     imageh: 400,
@@ -58,7 +58,7 @@ const slides = [
       "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
     buttonTitle: "order",
     image:
-      "/images/فرم ساز نرم افزار مدارس اتوماسیون هوشمند پارس آموز4" + ".png",
+      "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز4" + ".png",
   },
 ];
 
@@ -69,10 +69,57 @@ function getBodyDirection() {
   return computedStyle.direction;
 }
 export default function Forms({}: Props) {
+  const [startX, setStartX] = useState<number | null>(null);
+  const [currentX, setCurrentX] = useState<number | null>(null);
+  const [isSliding, setIsSliding] = useState(false);
+  const [swipeDirection, setSwipeDirection] = useState<string | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setStartX(e.touches[0].clientX);
+    setCurrentX(e.touches[0].clientX);
+    setIsSliding(true);
+    setSwipeDirection(null);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isSliding) return;
+
+    setCurrentX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!isSliding) return;
+
+    const deltaX = currentX! - startX!;
+
+    // You can adjust the threshold to determine when to trigger the slide
+    const threshold = 50;
+
+    if (deltaX < -threshold) {
+      // User has swiped left
+      setSwipeDirection("left");
+      next();
+    } else if (deltaX > threshold) {
+      // User has swiped right
+      pre();
+      setSwipeDirection("right");
+    }
+
+    // Reset the state if not enough swipe to either side
+    setIsSliding(false);
+  };
+
   const [slideIndex, setSlideIndex] = useState(0);
 
   const next = () => {
-    setSlideIndex(slideIndex === slides.length - 1 ? 0 : slideIndex + 1);
+    setSlideIndex((slideIndex) =>
+      slideIndex === slides.length - 1 ? 0 : slideIndex + 1
+    );
+  };
+  const pre = () => {
+    setSlideIndex((slideIndex) =>
+      slideIndex === 0 ? slides.length - 1 : slideIndex - 1
+    );
   };
   // useEffect(() => {
   //   const slideInterval = setInterval(next, 4000);
@@ -136,7 +183,9 @@ export default function Forms({}: Props) {
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}
-            onTouchMove={next}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           ></Image>
         </motion.div>
       </div>

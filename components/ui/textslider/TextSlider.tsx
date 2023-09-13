@@ -155,8 +155,8 @@ let variants = {
     opacity: 0,
   }),
   center: { x: 0, opacity: 1 },
-  exit: (direction: string) => ({
-    opacity: 0,
-    x: direction === "ltr" ? 150 : -150,
-  }),
+  // exit: (direction: string) => ({
+  //   opacity: 0,
+  //   x: direction === "ltr" ? 150 : -150,
+  // }),
 };

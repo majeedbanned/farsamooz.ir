@@ -64,7 +64,7 @@ const slides = [
     subtitle:
       "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
     buttonTitle: "order",
-    image: "/images/آزمون-آنلاین-نرم-افزار-مدارس-پارس-آموز5.png",
+    image: "/images/آزمون آنلاین نرم افزار مدارس پارس آموز5.png",
   },
 ];
 
@@ -159,7 +159,6 @@ export default function Azmoon({}: Props) {
         </div>
 
         <div className="  flex p-2  items-center justify-center flex-row  lg:flex-col gap-5">
-          {slideIndex}
           {slides.map((slide, i) => (
             <div
               onClick={() => setSlideIndex(Number(slide?.id) - 1 || 0)}
