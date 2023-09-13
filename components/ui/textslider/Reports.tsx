@@ -104,6 +104,38 @@ export default function Reports({}: Props) {
   return (
     <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#ffffff]  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
+        <motion.div
+          key={slideIndex}
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.2, duration: 0.3 }}
+          className="h-auto   border-yellow-700 flex flex-1 justify-center items-center"
+        >
+          {/* {slides[slideIndex].image} */}
+          <Image
+            //placeholder="blur"
+            src={slides[slideIndex]?.image || ""}
+            alt=""
+            className="object-contain  "
+            width={slides[slideIndex]?.imagew}
+            height={slides[slideIndex]?.imageh}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          ></Image>
+        </motion.div>
+        <div className="  flex p-2  items-center justify-center flex-row  lg:flex-col gap-5">
+          {slides.map((slide, i) => (
+            <div
+              onClick={() => setSlideIndex(i)}
+              className={`  ${
+                slideIndex === i ? "p-1 bg-orange-500" : ""
+              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-slate-300`}
+              key={slide?.id}
+            ></div>
+          ))}
+        </div>
+
         <div className=" flex flex-1 h-auto flex-col gap-4  border-0">
           {/* <AnimatePresence> */}
           <motion.div
@@ -130,38 +162,6 @@ export default function Reports({}: Props) {
 
           {/* </AnimatePresence> */}
         </div>
-
-        <div className="  flex p-2  items-center justify-center flex-row  lg:flex-col gap-5">
-          {slides.map((slide, i) => (
-            <div
-              onClick={() => setSlideIndex(i)}
-              className={`  ${
-                slideIndex === i ? "p-1 bg-orange-500" : ""
-              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-slate-300`}
-              key={slide?.id}
-            ></div>
-          ))}
-        </div>
-        <motion.div
-          key={slideIndex}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.3 }}
-          className="h-auto   border-yellow-700 flex flex-1 justify-center items-center"
-        >
-          {/* {slides[slideIndex].image} */}
-          <Image
-            //placeholder="blur"
-            src={slides[slideIndex]?.image || ""}
-            alt=""
-            className="object-contain  "
-            width={slides[slideIndex]?.imagew}
-            height={slides[slideIndex]?.imageh}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
-          ></Image>
-        </motion.div>
       </div>
     </div>
   );
