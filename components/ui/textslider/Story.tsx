@@ -102,7 +102,7 @@ export default function Story({}: Props) {
   //   };
   // }, [slideIndex]);
   return (
-    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-blue-400  ">
+    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#8ad0d8]  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
         <div className=" flex flex-1 h-auto flex-col gap-4  border-0">
           {/* <AnimatePresence> */}
@@ -136,8 +136,8 @@ export default function Story({}: Props) {
             <div
               onClick={() => setSlideIndex(i)}
               className={`  ${
-                slideIndex === i ? "p-1 bg-orange-500" : ""
-              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-white`}
+                slideIndex === i ? "p-1 bg-[#39cadb]" : ""
+              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-[#0faec0]`}
               key={slide?.id}
             ></div>
           ))}

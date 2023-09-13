@@ -12,7 +12,7 @@ const slides = [
     subtitle:
       "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
     buttonTitle: "order",
-    image: "/images/گزارشات1" + ".png",
+    image: "/images/8376504" + ".png",
   },
   {
     imagew: 400,
@@ -102,7 +102,7 @@ export default function Reports({}: Props) {
   //   };
   // }, [slideIndex]);
   return (
-    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#d9d8df]  ">
+    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#ffffff]  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
         <div className=" flex flex-1 h-auto flex-col gap-4  border-0">
           {/* <AnimatePresence> */}
@@ -137,7 +137,7 @@ export default function Reports({}: Props) {
               onClick={() => setSlideIndex(i)}
               className={`  ${
                 slideIndex === i ? "p-1 bg-orange-500" : ""
-              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-white`}
+              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-slate-300`}
               key={slide?.id}
             ></div>
           ))}

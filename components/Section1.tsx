@@ -86,7 +86,7 @@ export default function Section1({}: Props) {
     };
   }, []);
   return (
-    <div className="z-50   flex flex-col lg:flex-row sm:mx-8 mx-3 h-auto">
+    <div className="z-10  flex flex-col lg:flex-row sm:mx-8 mx-3 h-auto">
       <div className="flex flex-col relative  flex-1">
         {/* <AnimatePresence> */}
         <motion.div

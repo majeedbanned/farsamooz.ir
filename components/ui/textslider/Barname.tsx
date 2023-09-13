@@ -82,7 +82,7 @@ export default function Barname({}: Props) {
   //   };
   // }, [slideIndex]);
   return (
-    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-green-400  ">
+    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#e5f2fe]  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
         <div className=" flex flex-1 h-auto flex-col gap-4  border-0">
           {/* <AnimatePresence> */}
@@ -96,11 +96,11 @@ export default function Barname({}: Props) {
             className="   border-red-400 flex justify-center items-center  flex-1 flex-col overflow-hidden  h-auto"
           >
             <div className="border-0 mx-2 mt-8  sm:mx-12">
-              <h2 className="text-2xl mb-8 text-center text-white">
+              <h2 className="text-2xl mb-8 text-center text-[#2780d3]">
                 {slides[slideIndex]?.title}
               </h2>
               <div
-                className="text-end flex text-white flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
+                className="text-end flex text-[#4891d5] flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
               >
                 {slides[slideIndex]?.subtitle}
@@ -116,8 +116,8 @@ export default function Barname({}: Props) {
             <div
               onClick={() => setSlideIndex(i)}
               className={`  ${
-                slideIndex === i ? "p-1 bg-orange-500" : ""
-              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-white`}
+                slideIndex === i ? "p-1 bg-[#5aa9f3]" : ""
+              }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-[#2780d3]`}
               key={slide?.id}
             ></div>
           ))}

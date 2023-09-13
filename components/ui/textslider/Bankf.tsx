@@ -90,7 +90,7 @@ export default function Bankf({}: Props) {
   //   };
   // }, [slideIndex]);
   return (
-    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-orange-400  ">
+    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#edd195]  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
         <div className=" flex flex-1 h-auto flex-col gap-4  border-0">
           {/* <AnimatePresence> */}
@@ -124,7 +124,7 @@ export default function Bankf({}: Props) {
             <div
               onClick={() => setSlideIndex(i)}
               className={`  ${
-                slideIndex === i ? "p-1 bg-orange-500" : ""
+                slideIndex === i ? "p-1 bg-[#f4ac12]" : ""
               }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-white`}
               key={slide?.id}
             ></div>

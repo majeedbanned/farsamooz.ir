@@ -80,7 +80,7 @@ export default function TextSlider({}: Props) {
               className="absolute   w-full h-auto"
             >
               <motion.h2
-                className=" flex text-[#098dbd] items-center  w-full space-y-4 justify-end sm:text-3xl text-2xl"
+                className=" flex text-[#009B87] items-center  w-full space-y-4 justify-end sm:text-3xl text-2xl"
                 key={"c" + slideIndex}
                 initial="enter"
                 animate="center"
@@ -139,8 +139,8 @@ export default function TextSlider({}: Props) {
           <div
             onClick={() => setSlideIndex(i)}
             className={`  ${
-              slideIndex === i ? "p-1 bg-orange-500" : ""
-            }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-slate-400`}
+              slideIndex === i ? "p-1 bg-[#009B87]" : ""
+            }  transition-all w-5 h-5  border-2 rounded-full cursor-pointer border-green-700`}
             key={"b" + slide.id}
           ></div>
         ))}

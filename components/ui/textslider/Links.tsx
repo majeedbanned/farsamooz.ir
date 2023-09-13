@@ -20,9 +20,10 @@ sm:mx-0 sm:gap-0
         // display="flex"
       >
         <a
+          href="https://sibapp.com/applications/pamooz"
           className="
           border-[#009c87] p-1 rounded-xl border hover:bg-[#009c8729] 
-          href='https://cafebazaar.ir/app/com.arsis.parsamooz'
+         
           DownloadBox___StyledA-sc-t74c4l-5 eHIRVF"
           target="_blank"
         >
@@ -69,6 +70,7 @@ sm:mx-0 sm:gap-0
           </svg>
         </a>
         <a
+          href="https://sibche.com/applications/pamooz"
           className="
           border-[#009c87] p-1 rounded-xl border hover:bg-[#009c8729] 
        
@@ -98,6 +100,7 @@ sm:mx-0 sm:gap-0
           </svg>
         </a>
         <a
+          href="https://play.google.com/store/apps/details?id=com.arsis.parsamooz"
           className="
           border-[#009c87] p-1 rounded-xl border hover:bg-[#009c8729] 
        
@@ -118,6 +121,7 @@ sm:mx-0 sm:gap-0
           </svg>
         </a>
         <a
+          href="https://cafebazaar.ir/app/com.arsis.parsamooz"
           className="
           border-[#009c87] p-1 rounded-xl border hover:bg-[#009c8729] 
        

@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`z-20 justify-between  items-center  ${
+      className={`z-30 justify-between  items-center  ${
         sticky
           ? "fixed top-0 bg-white mt-0 z-[999] shadow-md w-auto inset-1  h-16"
           : "relative mt-8 ml-6 mr-4"

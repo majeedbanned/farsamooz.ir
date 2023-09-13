@@ -23,47 +23,46 @@ import ClientOnly from "@/ClientOnly";
 
 export default async function IndexPage() {
   return (
-    <div className="z-50  relative flex flex-col  ">
+    <div className="z-20  relative flex flex-col  ">
       {/* <ClientOnly> */}
       <Section1></Section1>
       {/* </ClientOnly> */}
       <section id="Features">
         <Features></Features>
       </section>
-
-      <section id="Azmoon">
-        <Azmoon></Azmoon>
+      <section id="Notif">
+        <Notif></Notif>
       </section>
+
       <section id="Daftar">
         <Daftar></Daftar>
       </section>
-      <section id="Notif">
-        <Notif></Notif>
+
+      <section id="Azmoon">
+        <Azmoon></Azmoon>
       </section>
 
       <section id="Message">
         <Message></Message>
       </section>
-
-      <section id="Message">
+      <section id="Bankq">
+        <Bankq></Bankq>
+      </section>
+      <section id="Forms">
         <Forms></Forms>
       </section>
       <section id="Events">
         <Events></Events>
       </section>
-      <section id="Bankq">
-        <Bankq></Bankq>
+      <section id="Barname">
+        <Barname></Barname>
       </section>
-
       <section id="Story">
         <Story></Story>
       </section>
 
       <section id="Reports">
         <Reports></Reports>
-      </section>
-      <section id="Barname">
-        <Barname></Barname>
       </section>
 
       <section id="Bankf">

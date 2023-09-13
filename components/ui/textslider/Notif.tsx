@@ -92,7 +92,7 @@ export default function Notif({}: Props) {
   //   };
   // }, [slideIndex]);
   return (
-    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-white  ">
+    <div className="flex flex-col overflow-hidden h-auto sm:h-screen bg-[#efefef]  ">
       <div className="flex flex-1  relative w-full p-0  overflow-hidden lg:flex-row flex-col    ">
         <div className=" flex flex-1 h-auto flex-col gap-4  border-0">
           {/* <AnimatePresence> */}
