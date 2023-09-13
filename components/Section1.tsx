@@ -27,8 +27,8 @@ export default function Section1({}: Props) {
       image: "/images/pr.png",
     },
     {
-      imagew: 550,
-      imageh: 550,
+      imagew: 530,
+      imageh: 530,
       id: 2,
       title: "ارسال نوتیفیکیشن و پیام کوتاه",
       subtitle:
@@ -37,19 +37,19 @@ export default function Section1({}: Props) {
       image: "/images/pr2.png",
     },
     {
-      imagew: 430,
-      imageh: 430,
+      imagew: 530,
+      imageh: 530,
       id: 3,
       title: "ارسال نوتیفیکیشن و پیام کوتاه",
       subtitle:
         "هبر انقلاب با بیان اینکه همه اقدامات مثبت دولت که با این زحمت انجام می‌گیرد، تحت‌الشعاع مشکلات معیشتی مثل گرانی مسکن و اجاره‌بها قرار می‌گیرد و این حیف است، گفت: عمده تحریم‌ها،‌ با هدف گروگان‌گرفتن معیشت مردم است؛ باید در کنار مذاکرات،‌ تحریم‌ها را خن",
       buttonTitle: "order",
-      image: "/images/ارسال نوتیفیکیشن - نرم افزار مدارس.png",
+      image: "/images/ارسال-نوتیفیکیشن---نرم-افزار-مدارس.png",
     },
 
     {
-      imagew: 590,
-      imageh: 590,
+      imagew: 530,
+      imageh: 530,
       id: 4,
       title: "ارسال نوتیفیکیشن و پیام کوتاه",
       subtitle:
