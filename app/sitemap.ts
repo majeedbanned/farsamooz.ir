@@ -20,14 +20,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.5,
     },
-    ,
+    
     {
         url: 'https://farsamooz.ir/agents',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
     },
-    ,
+    
     {
         url: 'https://farsamooz.ir/contact',
       lastModified: new Date(),
