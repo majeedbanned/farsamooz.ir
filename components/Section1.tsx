@@ -17,6 +17,7 @@ export default function Section1({}: Props) {
 
   const slides = [
     {
+      rel: "پارس آموز نرم افزار هوشمند مدارس و مراکز آموزشی",
       imagew: 530,
       imageh: 530,
       id: 1,
@@ -27,6 +28,8 @@ export default function Section1({}: Props) {
       image: "/images/pr.png",
     },
     {
+      rel: "پارس آموز نرم افزار هوشمند مدارس و مراکز آموزشی",
+
       imagew: 530,
       imageh: 530,
       id: 2,
@@ -37,6 +40,8 @@ export default function Section1({}: Props) {
       image: "/images/pr2.png",
     },
     {
+      rel: "پارس آموز نرم افزار هوشمند مدارس و مراکز آموزشی",
+
       imagew: 530,
       imageh: 530,
       id: 3,
@@ -48,6 +53,8 @@ export default function Section1({}: Props) {
     },
 
     {
+      rel: "پارس آموز نرم افزار هوشمند مدارس و مراکز آموزشی",
+
       imagew: 530,
       imageh: 530,
       id: 4,
@@ -89,6 +96,7 @@ export default function Section1({}: Props) {
     <div className="z-10  flex flex-col lg:flex-row sm:mx-8 mx-3 h-auto">
       <div className="flex flex-col relative  flex-1">
         {/* <AnimatePresence> */}
+
         <motion.div
           key={slideIndex}
           initial={{ x: -800, opacity: 0 }}
@@ -98,13 +106,13 @@ export default function Section1({}: Props) {
           className="  flex-1 grid-flow-row  h-[550px] "
         >
           <Image
+            alt={slides[slideIndex]?.rel}
             //placeholder="blur"
             className=" sm:m-6   "
             src={slides[slideIndex]?.image || ""}
             // src={orange}
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}
-            alt="Orange"
           ></Image>
         </motion.div>
         {/* </AnimatePresence> */}
@@ -121,7 +129,12 @@ export default function Section1({}: Props) {
       </div> */}
         </div>
       </div>
-      <div className="flex flex-col border-spacing-0 gap-6 flex-1">
+      <div className="flex flex-col border-spacing-0 gap-2 flex-1">
+        <div className="flex justify-end ">
+          <h1 className="sm:mr-0 mt-16 text-2xl text-center text-orange-500 leading-normal">
+            پارس آموز نرم افزار هوشمند مدارس و مراکز آموزشی
+          </h1>
+        </div>
         <TextSlider></TextSlider>
         <Links></Links>
 

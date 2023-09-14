@@ -5,15 +5,17 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "دسترسی به برنامه هفتگی اختصاصی دانش آموز و معلم بر روی اپلیکیشن موبایل    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "برنامه کلاسی",
-    subtitle:
-    `
+    subtitle: `
 دسترسی به برنامه هفتگی اختصاصی دانش آموز و معلم بر روی اپلیکیشن موبایل
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/برنامه-هفتگی" + ".png",
   },
 ];
@@ -97,7 +99,7 @@ export default function Barname({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

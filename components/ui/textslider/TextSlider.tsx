@@ -6,19 +6,18 @@ type Props = {};
 const slides = [
   {
     id: 1,
-    title: "پارس آموز - اتوماسیون موبایلی هوشمند مدارس و آموزشگاه ها",
-    subtitle:
-    `
-اتوماسیون هوشمند پارس آموز مجموعه نرم افزار هاییست به منظور مدیریت فرایند های مختلف آموزشی و اطلاع رسانی یک واحد آموزشی
-.
-    `,   
+    title: " مدیریت مدرسه و آموزشگاه بر روی ابر ها",
+    subtitle: `
+اتوماسیون هوشمند پارس آموز مجموعه نرم افزاری است به منظور مدیریت فرایند های مختلف آموزشی و اطلاع رسانی یک واحد آموزشی
+
+    `,
     buttonTitle: "order",
     image: "img 2",
   },
   {
     id: 2,
     title: "اپلیکیشن اختصاصی ",
-    subtitle:`
+    subtitle: `
     دسترسی به اپلیکیشن اختصاصی برای معلمین ، دانش آموزان و والدین و همچنین مدیر مدرسه یا آموزشگاه
     دسترسی سریع به اطلاعات 
 
@@ -29,7 +28,7 @@ const slides = [
   {
     id: 3,
     title: "دسترسی در بستر های مختلف",
-    subtitle:`
+    subtitle: `
   دسترسی به امکانات نرم افزار از طریق پنل وب ، اپلیکیشن اندروید و اپلیکیشن 
   IOS
   دریافت نوتیفیکیشن به محز ثبت وضعیت در اپلیکیشن معلمین
@@ -41,7 +40,7 @@ const slides = [
   {
     id: 4,
     title: "گزارشات مدیریتی",
-    subtitle:`
+    subtitle: `
 گزارشات گوناگون مدیریتی از وضعیت آموزشی و انضباطی در پنل مدیریت
 امکان چاپ گزارشات
 دسترسی دانش آموزان به گزارشات حضور و غیاب و ارزشیابی های کلاسی  
@@ -49,7 +48,6 @@ const slides = [
     buttonTitle: "order",
     image: "img 5",
   },
- 
 ];
 
 function getBodyDirection() {
@@ -66,13 +64,13 @@ export default function TextSlider({}: Props) {
   };
   useEffect(() => {
     // alert();
-    const slideInterval = setInterval(next, 7000);
+    const slideInterval = setInterval(next, 9000);
     return () => {
       clearInterval(slideInterval);
     };
   }, [slideIndex]);
   return (
-    <div className="flex h-64 flex-col overflow-hidden lg:mt-32   ">
+    <div className="flex h-64 flex-col overflow-hidden lg:mt-12   ">
       <div
         className="flex  flex-1 relative  w-full p-0  overflow-hidden
       flex-col
@@ -90,7 +88,7 @@ export default function TextSlider({}: Props) {
               className="absolute   w-full h-auto"
             >
               <motion.h2
-                className=" flex text-[#009B87] items-center  w-full space-y-4 justify-end sm:text-3xl text-2xl"
+                className="leading-normal flex text-[#009B87] items-center  w-full space-y-4 justify-end sm:text-2xl text-2xl"
                 key={"c" + slideIndex}
                 initial="enter"
                 animate="center"
@@ -103,7 +101,7 @@ export default function TextSlider({}: Props) {
               </motion.h2>
 
               <motion.h2
-                className=" flex text-slate-600 items-center mx-1 text-right my-2 justify-end  sm:text-xl  text-md"
+                className="leading-loose flex text-slate-600 rtl items-center mx-1 text-right my-2 justify-end  sm:text-xl  text-md"
                 key={"d" + slideIndex}
                 initial="enter"
                 animate="center"

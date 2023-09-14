@@ -5,12 +5,12 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "      آزمون های تستی و تشریحی و صوتی  ",
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "سامانه آزمون های آنلاین",
-    subtitle:
-      `
+    subtitle: `
       طراحی و اجرای آزمونهای مختلف از طریق اپلیکیشن و وب
 
       آزمون های تستی و تشریحی و صوتی
@@ -20,45 +20,49 @@ const slides = [
       قابلیت تصحیح آزمونها بر روی گوشی
       
       `,
-      
-      buttonTitle: "order",
+
+    buttonTitle: "order",
     image: "/images/نرم-افزار-مدارس" + ".png",
   },
   {
+    rel: "    دسترسی به آرشیو آزمونها و تحلیل و نمرات هر آزمون     ",
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "سامانه آزمون های آنلاین",
-    subtitle:
-      `
+    subtitle: `
     دسترسی به آرشیو آزمونها و تحلیل و نمرات هر آزمون 
 
       
-      `,    buttonTitle: "order",
+      `,
+    buttonTitle: "order",
     image: "/images/آزمون-آنلاین-نرم-افزار-مدارس-پارس-آموز1.png",
   },
   {
+    rel: "    انجام تمام مراحل تعریف آزمون از طریق اپلیکیشن هوشمند    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "سامانه آزمون های آنلاین",
-      subtitle:
-      `
+    subtitle: `
     انجام تمام مراحل تعریف آزمون از طریق اپلیکیشن هوشمند
 
     قابلیت اشتراک آزمون بین دبیران
     
       
-      `,      buttonTitle: "order",
+      `,
+    buttonTitle: "order",
     image: "/images/آزمون-آنلاین-نرم-افزار-مدارس-پارس-آموز2.png",
   },
   {
+    rel: "برگزاری آزمون بر روی گوشی و از طریق وب",
+
     imagew: 400,
     imageh: 400,
     id: 4,
     title: "سامانه آزمون های آنلاین",
-    subtitle:
-    `
+    subtitle: `
 برگزاری آزمون بر روی گوشی و از طریق وب
 
 قابلین محدود کردن زمان آزمون
@@ -66,35 +70,40 @@ const slides = [
 امکان ارسال پاسخ به صورت عکس و یا فایل صوتی
 
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/آزمون-آنلاین-نرم-افزار-مدارس-پارس-آموز3.png",
   },
 
   {
+    rel: "تعریف آزمون از طریق اپلیکیشن به ساده ترین روش    ",
+
     imagew: 400,
     imageh: 400,
     id: 5,
     title: "سامانه آزمون های آنلاین",
-    subtitle:
-    `
+    subtitle: `
 تعریف آزمون از طریق اپلیکیشن به ساده ترین روش
 
 قابلیت طراحی آزمون های بین کلاسی و یا مختص یک دانش آموز و یا گروهی از دانش آموزان
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/آزمون-آنلاین-نرم-افزار-مدارس-پارس-آموز4.png",
   },
 
   {
+    rel: "",
+
     imagew: 400,
     imageh: 400,
     id: 6,
     title: "سامانه آزمون های آنلاین",
-    subtitle:
-    `
+    subtitle: `
 تنظمات مدیریتی مختلف در طراحی آزمون های آنلاین  
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/آزمون آنلاین نرم افزار مدارس پارس آموز5.png",
   },
 ];
@@ -211,7 +220,7 @@ export default function Azmoon({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

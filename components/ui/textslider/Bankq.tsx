@@ -5,12 +5,13 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "دسترسی به بیش از 700 هزار سئوال بروز درسی در مقاطع و پایه های مختلف از طریف اپ موبایل    ",
+
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "بانک جامع سئوالات درسی ",
-    subtitle:
-    `
+    subtitle: `
 دسترسی به بیش از 700 هزار سئوال بروز درسی در مقاطع و پایه های مختلف از طریف اپ موبایل
 
 قابلیت افزودن سئوال به بانک سئوال
@@ -18,48 +19,54 @@ const slides = [
 
 
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/بانک سوال1" + ".png",
   },
   {
+    rel: "قابلیت جستجو در بانک آنلاین سئوالات به تفکیک درس ، فصل و کلمات کلیدی    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "بانک جامع سئوالات درسی ",
 
-    subtitle:
-    `
+    subtitle: `
 
 قابلیت جستجو در بانک آنلاین سئوالات به تفکیک درس ، فصل و کلمات کلیدی
 
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/بانک سوال2" + ".png",
   },
   {
+    rel: "مشاهده کلید سئوالات تستی و تشریحی در بانک سئوالات    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "بانک جامع سئوالات درسی ",
 
-   subtitle:
-    `
+    subtitle: `
 
 مشاهده کلید سئوالات تستی و تشریحی در بانک سئوالات
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/بانک سوالات نرم افزار مدارس پارس آموز2" + ".png",
   },
 
   {
+    rel: "  افزودن سئوالات  اختصاصی معلم از طریق اپ و پنل وب    ",
+
     imagew: 400,
     imageh: 400,
     id: 4,
     title: "بانک جامع سئوالات درسی ",
 
-    subtitle:
-    `
+    subtitle: `
 
   افزودن سئوالات  اختصاصی معلم از طریق اپ و پنل وب
 
@@ -67,7 +74,8 @@ const slides = [
   
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/بانک سوالات نرم افزار مدارس پارس آموز3" + ".png",
   },
 ];
@@ -189,7 +197,7 @@ export default function Bankq({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

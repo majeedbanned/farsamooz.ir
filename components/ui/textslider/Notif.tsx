@@ -5,6 +5,8 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "ارسال نوتیفیکیشن در هنگام ثبت غیبت  ، تاخیر ، ثبت ارزشیابی ، پیام ها و رویداد های مهم و ...    ",
+
     imagew: 510,
     imageh: 510,
     id: 1,
@@ -19,6 +21,8 @@ const slides = [
     image: "/images/ارسال نوتیفیکیشن - نرم افزار مدارس" + ".png",
   },
   {
+    rel: "ارسال نوتیفیکیشن و پیامک به صورت اختصاصی و یا گروهی به کلاس یا گروه های دانش آموزی    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
@@ -149,7 +153,7 @@ export default function Notif({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex].image}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex].imagew}
             height={slides[slideIndex].imageh}

@@ -5,12 +5,13 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "  قابلیت طراحی انواع فرم  جهت جمع آوری اطلاعات و دریافت تکالیف    ",
+
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "فرم ساز ",
-    subtitle:
-    `
+    subtitle: `
 
   قابلیت طراحی انواع فرم  جهت جمع آوری اطلاعات و دریافت تکالیف
 
@@ -23,69 +24,77 @@ const slides = [
   گزارش گیری از اطلاعات دریافت شده
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image:
       "/images/فرم ساز نرم افزار مدارس اتوماسیون هوشمند پارس آموز" + ".png",
   },
   {
+    rel: "مشاهده لیست فرمای اختصاصی هر دانش آموز در دسته بندی های مختلف بر روی اپلیکیشن هوشمند    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "فرم ساز ",
-    subtitle:
-    `
+    subtitle: `
 مشاهده لیست فرمای اختصاصی هر دانش آموز در دسته بندی های مختلف بر روی اپلیکیشن هوشمند
   
     
-    `,  
+    `,
     image:
       "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز1" + ".png",
   },
   {
+    rel: "    مشاهده لیست فرمای اختصاصی هر دانش آموز در دسته بندی های مختلف بر روی اپلیکیشن هوشمند    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "فرم ساز ",
-    subtitle:
-    `
+    subtitle: `
 
     مشاهده لیست فرمای اختصاصی هر دانش آموز در دسته بندی های مختلف بر روی اپلیکیشن هوشمند
 
   
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image:
       "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز2" + ".png",
   },
   {
+    rel: "استفاده از کنترل های مختلف نظیر  کادر متنی  ، لیست انتخابی ،ویرایشگر متن ، چک باکس ، تاریخ و بارگزاری فایل    ",
+
     imagew: 400,
     imageh: 400,
     id: 4,
     title: "فرم ساز ",
-    subtitle:
-    `
+    subtitle: `
 
 استفاده از کنترل های مختلف نظیر  کادر متنی  ، لیست انتخابی ،ویرایشگر متن ، چک باکس ، تاریخ و بارگزاری فایل
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image:
       "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز3" + ".png",
   },
 
   {
+    rel: "قابلیت تعریف تنظیمات و دسترسی های مختلف بر روی فرم ها    ",
+
     imagew: 400,
     imageh: 400,
     id: 5,
     title: "فرم ساز ",
-    subtitle:
-    `
+    subtitle: `
 
 قابلیت تعریف تنظیمات و دسترسی های مختلف بر روی فرم ها
 
 قابلیت تعریف فرم  توسط معلمین برای کلاس اختصاصی خود
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image:
       "/images/فرم-ساز-نرم-افزار-مدارس-اتوماسیون-هوشمند-پارس-آموز4" + ".png",
   },
@@ -170,7 +179,7 @@ export default function Forms({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

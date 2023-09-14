@@ -16,7 +16,7 @@ export default function SiteLogo() {
         <Image
           //placeholder="blur"
           src={logo}
-          alt=""
+          alt=" پارس آموز اتوماسیون و نرم افزار هوشمند مدارس"
           className="object-contain  "
           width={150}
           height={150}

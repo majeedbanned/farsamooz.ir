@@ -5,12 +5,13 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "ارسال و دریافت پیام به صورت تکی و گروهی به کلاس ها و دانش آموزان مختلف    ",
+
     imagew: 600,
     imageh: 600,
     id: 1,
     title: "ارسال و دریافت پیام ، عکس ، فایل و ویدیو",
-    subtitle:
-    `
+    subtitle: `
 ارسال و دریافت پیام به صورت تکی و گروهی به کلاس ها و دانش آموزان مختلف
 
 قابلیت ثبت پاسخ توسط دانش آموز و معلم
@@ -23,20 +24,21 @@ const slides = [
 
   
     
-    `,  
-    
+    `,
+
     buttonTitle: "order",
     image:
       "/images/111ارسال پیام نرم افزار مدارس اتوماسیون هوشمند پارس آموز" +
       ".png",
   },
   {
+    rel: "    قابلیت ثبت پاسخ توسط دانش آموز و معلم    ",
+
     imagew: 600,
     imageh: 600,
     id: 2,
     title: "ارسال و دریافت پیام ، عکس ، فایل و ویدیو",
-    subtitle:
-    `
+    subtitle: `
 
     ارسال و دریافت پیام به صورت تکی و گروهی به کلاس ها و دانش آموزان مختلف
 
@@ -49,17 +51,19 @@ const slides = [
     دسته بندی پیام ها در گروه ای مختلف
   
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image:
       "/images/ارسال پیام نرم افزار مدارس اتوماسیون هوشمند پارس آموز2" + ".png",
   },
   {
+    rel: "    امکان الصاق انواع فایل و عکس به پیام ها    ",
+
     imagew: 800,
     imageh: 800,
     id: 3,
     title: "ارسال و دریافت پیام ، عکس ، فایل و ویدیو",
-    subtitle:
-    `
+    subtitle: `
 
     ارسال و دریافت پیام به صورت تکی و گروهی به کلاس ها و دانش آموزان مختلف
 
@@ -72,7 +76,8 @@ const slides = [
     دسته بندی پیام ها در گروه ای مختلف
   
     
-    `,       buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image:
       "/images/ارسال پیام نرم افزار مدارس اتوماسیون هوشمند پارس آموز1" + ".png",
   },
@@ -195,7 +200,7 @@ export default function Message({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

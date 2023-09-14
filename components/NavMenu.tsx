@@ -60,7 +60,7 @@ export default function NavMenu() {
                 href="/"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#009B87] rounded
+                text-[#004138] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -73,7 +73,7 @@ export default function NavMenu() {
                 href="aboutus"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#009B87] rounded
+                text-[#004138] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -86,7 +86,7 @@ export default function NavMenu() {
                 href="demo"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#009B87] rounded
+                text-[#004138] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -99,7 +99,7 @@ export default function NavMenu() {
                 href="agents"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#009B87] rounded
+                text-[#004138] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -113,7 +113,7 @@ export default function NavMenu() {
                 href="contact"
                 className="block  py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#009B87] rounded
+                text-[#004138] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"

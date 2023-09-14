@@ -5,40 +5,46 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "دسترسی به انواع گزارشات مدیریتی نظیر رتبه بندی کلاسی ، نفرات برتر ، غیبت ها ، تا خیر ها و دفتر کلاسی معلمین    ",
+
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "گزارشات مدیریتی و دانش آموزی",
-    subtitle:
-    `
+    subtitle: `
 دسترسی به انواع گزارشات مدیریتی نظیر رتبه بندی کلاسی ، نفرات برتر ، غیبت ها ، تا خیر ها و دفتر کلاسی معلمین
 
 مشاهده لیست غیبت ها و تاخیر ها ی دانش آموز در اپ اختصاصی
 
-    `,       buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/8376504" + ".png",
   },
   {
+    rel: "مشاهده ارزشیابی ها و نمرات کلاسی به تفکیک درس در اپلیکیشن دانش آموز    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "گزارشات مدیریتی و دانش آموزی",
-    subtitle:
-    `
+    subtitle: `
 مشاهده ارزشیابی ها و نمرات کلاسی به تفکیک درس در اپلیکیشن دانش آموز
 
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/گزارشات2" + ".png",
   },
   {
+    rel: "مشاهده لیست غیبت ها و تاخیر ها در اپلیکیشن دانش آموز    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "گزارشات مدیریتی و دانش آموزی",
-    subtitle:
-    `
+    subtitle: `
 مشاهده لیست غیبت ها و تاخیر ها در اپلیکیشن دانش آموز
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/گزارشات3" + ".png",
   },
 ];
@@ -122,7 +128,7 @@ export default function Reports({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

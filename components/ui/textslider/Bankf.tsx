@@ -5,31 +5,35 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "اشتراک گذاری فایهای مختلف در فرمت های گوناگون در بانک فایل    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "بانک فایل",
-    subtitle:
-    `
+    subtitle: `
 اشتراک گذاری فایهای مختلف در فرمت های گوناگون در بانک فایل
 
 فضای اختصاصی ذخیره سازی برای هرمعلم برای قراردادن فایل های درسی
 
 تعریف سطوح دسترسی برای محدود کردن دسترسی به فایل ها
 
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/بانک فایل" + ".png",
   },
   {
+    rel: "ذخیره فایل های گوناگون از طریق اپلیکیشن معلمین    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "بانک فایل",
-    subtitle:
-    `
+    subtitle: `
 ذخیره فایل های گوناگون از طریق اپلیکیشن معلمین
 
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/بانک فایل1" + ".png",
   },
 ];
@@ -149,13 +153,13 @@ export default function Bankf({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
+            alt={slides[slideIndex]?.rel}
           ></Image>
         </motion.div>
       </div>

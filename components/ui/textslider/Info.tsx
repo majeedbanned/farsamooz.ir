@@ -5,12 +5,13 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "امکان دسترسی و ویرایش لیست دانش آموزان و معلمین از طریق اپ    ",
+
     imagew: 650,
     imageh: 650,
     id: 2,
     title: " تغذیه اطلاعات از طریق اپ موبایل ",
-    subtitle:
-    `
+    subtitle: `
 امکان دسترسی و ویرایش لیست دانش آموزان و معلمین از طریق اپ
 
 معرفی دانش آموزان برتر
@@ -18,7 +19,8 @@ const slides = [
 تغییر کلمه عبور و عکس دانش آموزان و معلمین 
 
 تعریف اخبار و اطلاعیه های مهم در صفحه اول اپ
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/ورود اطلاعات" + ".png",
   },
 ];
@@ -102,7 +104,7 @@ export default function Info({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

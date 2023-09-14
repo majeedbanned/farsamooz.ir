@@ -10,7 +10,7 @@ export default function Features({}: Props) {
       <a href="#Notif">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="اطلاع رسانی "
             width={50}
             height={50}
             className="w-[75px]"
@@ -23,7 +23,7 @@ export default function Features({}: Props) {
       <a href="#Daftar">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="دفتر کلاسی"
             width={50}
             height={50}
             className="w-[75px]"
@@ -36,7 +36,7 @@ export default function Features({}: Props) {
       <a href="#Azmoon">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="آزمون آنلاین"
             width={50}
             height={50}
             className="w-[75px]"
@@ -49,7 +49,7 @@ export default function Features({}: Props) {
       <a href="#Message">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="ارسال پیام"
             width={50}
             height={50}
             className="w-[75px]"
@@ -62,7 +62,7 @@ export default function Features({}: Props) {
       <a href="#Bankq">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="بانک سوال"
             width={50}
             height={50}
             className="w-[75px]"
@@ -75,7 +75,7 @@ export default function Features({}: Props) {
       <a href="#Forms">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="فرم ساز"
             width={50}
             height={50}
             className="w-[75px]"
@@ -88,7 +88,7 @@ export default function Features({}: Props) {
       <a href="#Events">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="رویداد ها"
             width={50}
             height={50}
             className="w-[75px]"
@@ -101,7 +101,7 @@ export default function Features({}: Props) {
       <a href="#Barname">
         <div className="flex gap-2  hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="برنامه کلاسی"
             width={50}
             height={50}
             className="w-[75px]"
@@ -115,7 +115,7 @@ export default function Features({}: Props) {
       <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
         <a href="#Story">
           <Image
-            alt=""
+            alt="استوری"
             width={50}
             height={50}
             className="w-[75px]"
@@ -125,10 +125,9 @@ export default function Features({}: Props) {
         <p className="text-[#009B87]"> استوری</p>
       </div>
       <a href="#Reports">
-        {" "}
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="گزارشات"
             width={50}
             height={50}
             className="w-[75px]"
@@ -141,7 +140,7 @@ export default function Features({}: Props) {
       <a href="#Bankf">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="بانک فایل"
             width={50}
             height={50}
             className="w-[75px]"
@@ -154,7 +153,7 @@ export default function Features({}: Props) {
       <a href="#Info">
         <div className="flex gap-2 hover:shadow-xl flex-col justify-center items-center w-24 h-24 sm:w-28 sm:h-36 rounded-tr-[55px] text-sm text-[#3f662c] rounded-xl ">
           <Image
-            alt=""
+            alt="ورود اطلاعات"
             width={50}
             height={50}
             className="w-[75px]"

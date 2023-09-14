@@ -5,12 +5,13 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "دفتر کلاسی هوشمند وسریع در اپلیکیشن معلمین    ",
+
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "دفتر کلاسی هوشمند در اپلیکیشن پارس آموز",
-    subtitle:
-    `
+    subtitle: `
 دفتر کلاسی هوشمند وسریع در اپلیکیشن معلمین
 
 ثبت حضور و غیاب تکی و گروهی
@@ -27,16 +28,18 @@ const slides = [
 
   
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/دفتر کلاسی نرم افزار مدارس پارس آموز" + ".png",
   },
   {
+    rel: "نمایش به صورت جدول وعملکرد ساده و سریع    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "دفتر کلاسی هوشمند در اپلیکیشن پارس آموز",
-    subtitle:
-    `
+    subtitle: `
 نمایش به صورت جدول وعملکرد ساده و سریع
 
 قابلیت مشاهده عکس دانش آموزان و روزهای هفته
@@ -44,16 +47,18 @@ const slides = [
 
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/دفتر-کلاسی-نرم-افزار-مدارس-پارس-آموز1" + ".png",
   },
   {
+    rel: "ثبت فعالیت های روزانه معلمین    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "دفتر کلاسی هوشمند در اپلیکیشن پارس آموز",
-    subtitle:
-    `
+    subtitle: `
 ثبت و حذف گروهی و تکی حضور غیاب و نمرات
 
 ثبت فعالیت های روزانه معلمین
@@ -62,48 +67,54 @@ const slides = [
 
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/دفتر-کلاسی-نرم-افزار-مدارس-پارس-آموز2" + ".png",
   },
   {
+    rel: "دسترسی معلم به برنامه هفتگی کلاسهای مختلف به صورت اتوماتیک    ",
+
     imagew: 400,
     imageh: 400,
     id: 4,
     title: "دفتر کلاسی هوشمند در اپلیکیشن پارس آموز",
-    subtitle:
-    `
+    subtitle: `
 دسترسی معلم به برنامه هفتگی کلاسهای مختلف به صورت اتوماتیک
 
 
   دسترسی مدیر به تمامی دفاتر کلاسی معلمین
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/دفتر-کلاسی-نرم-افزار-مدارس-پارس-آموز3" + ".png",
   },
 
   {
+    rel: "محاسبه نمره ماهیانه دانش آموز به صورت اتوماتیک     ",
+
     imagew: 400,
     imageh: 400,
     id: 5,
     title: "دفتر کلاسی هوشمند در اپلیکیشن پارس آموز",
-    subtitle:
-    `
+    subtitle: `
 انتقال نمرات آزمون های آنلاین به دفتر کلاسی با مشخص کردن تاریخ و ضریب نمره
 
 محاسبه نمره ماهیانه دانش آموز به صورت اتوماتیک 
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/دفتر-کلاسی-نرم-افزار-مدارس-پارس-آموز4" + ".png",
   },
 
   {
+    rel: "قابلیت تعریف عناوین و مقادیر ارزشیابی به همراه ارزش و ضریب توسط هر معلم    ",
+
     imagew: 400,
     imageh: 400,
     id: 6,
     title: "دفتر کلاسی هوشمند در اپلیکیشن پارس آموز",
-    subtitle:
-    `
+    subtitle: `
 قابلیت تعریف عناوین و مقادیر ارزشیابی به همراه ارزش و ضریب توسط هر معلم
 
 ثبت نمره ، ارزشیابی ، ارزشیابی توصیفی ، نمره ماهیانه ، توضیحات و عکس برای هر دانش آموز در هر زنگ
@@ -111,7 +122,8 @@ const slides = [
 
   
     
-    `,     buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/دفتر-کلاسی-نرم-افزار-مدارس-پارس-آموز5" + ".png",
   },
 ];
@@ -233,7 +245,7 @@ export default function Daftar({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

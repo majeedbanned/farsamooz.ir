@@ -5,47 +5,51 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "تعریف استوری های کوتاه به صورت عکس در اپلیکیشن     ",
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "استوری و گالری تصاویر",
-    subtitle:
-    `
+    subtitle: `
 تعریف استوری های کوتاه به صورت عکس در اپلیکیشن 
 
 مشاهده به صورت گالری عکس 
 
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/گالری عکس1" + ".png",
   },
   {
+    rel: "تعریف استوری های کوتاه به صورت عکس در اپلیکیشن     ",
+
     imagew: 550,
     imageh: 550,
     id: 2,
     title: "استوری و گالری تصاویر",
 
-    subtitle:
-    `
+    subtitle: `
 تعریف استوری های کوتاه به صورت عکس در اپلیکیشن 
 
 مشاهده به صورت گالری عکس 
 
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/گالری عکس2" + ".png",
   },
   {
+    rel: "تعریف استوری های کوتاه به صورت عکس در اپلیکیشن     ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "استوری و گالری تصاویر",
 
-    subtitle:
-    `
+    subtitle: `
 تعریف استوری های کوتاه به صورت عکس در اپلیکیشن 
 
 مشاهده به صورت گالری عکس 
 
-    `,   
+    `,
     image: "/images/گالری-عکس3" + ".png",
   },
 ];
@@ -167,7 +171,7 @@ export default function Story({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

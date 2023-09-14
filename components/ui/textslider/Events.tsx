@@ -5,12 +5,13 @@ import Image from "next/image";
 type Props = {};
 const slides = [
   {
+    rel: "تعریف رویداد های آتی مدرسه توسط کادر مدرسه و معلمین    ",
+
     imagew: 650,
     imageh: 650,
     id: 1,
     title: "تقویم مدرسه- رویدادها ",
-    subtitle:
-    `
+    subtitle: `
 
 تعریف رویداد های آتی مدرسه توسط کادر مدرسه و معلمین
 
@@ -18,34 +19,39 @@ const slides = [
 
 تعریف برنامه آزمون ها در قسمت تقویم مدرسه
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/events1" + ".png",
   },
   {
+    rel: "    مشاهده رویداد ها بصورت تقویم بر روی اپ دانش آموزان    ",
+
     imagew: 400,
     imageh: 400,
     id: 2,
     title: "تقویم مدرسه- رویدادها ",
-    subtitle:
-    `
+    subtitle: `
     مشاهده رویداد ها بصورت تقویم بر روی اپ دانش آموزان
 
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/events2" + ".png",
   },
   {
+    rel: "   تعریف سطوح دسترسی برای مشاهده رویدادی ها مختلف    ",
+
     imagew: 400,
     imageh: 400,
     id: 3,
     title: "تقویم مدرسه- رویدادها ",
-    subtitle:
-    `
+    subtitle: `
    تعریف سطوح دسترسی برای مشاهده رویدادی ها مختلف
 
    
     
-    `,      buttonTitle: "order",
+    `,
+    buttonTitle: "order",
     image: "/images/events3" + ".png",
   },
 ];
@@ -167,7 +173,7 @@ export default function Events({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt=""
+            alt={slides[slideIndex]?.rel}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}
