@@ -29,7 +29,8 @@ const iransans = localFont({
 });
 export const metadata = {
   title: "پارس آموز اتوماسیون و نرم افزار هوشمند مدیریت مدارس و آموزشگاه ها",
-  description: "نرم افزار و اپلیکیشن مدیریت مدارس و آک.زشگاه ها دفتر کلاسی آزمون آنلاین اپلیکیشن هوشمند",
+  description:
+    "نرم افزار و اپلیکیشن مدیریت مدارس و آک.زشگاه ها دفتر کلاسی آزمون آنلاین اپلیکیشن هوشمند",
 };
 
 // export async function generateStaticParams() {
@@ -52,6 +53,7 @@ export default async function Root({
     <html
       // lang={params.lang}
       dir="ltr"
+      lang="fa"
       className={cn("antialiased  ", iransans.className)}
     >
       {/* /${barlowCondensed.className} ${inter.className} ${merriweather.variable} ${roboto.className} ${iransans.className} font-sans/ */}
