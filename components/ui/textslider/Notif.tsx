@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { isLineBreak } from "typescript";
 type Props = {};
 const slides = [
   {
@@ -12,9 +13,9 @@ const slides = [
     id: 1,
     title: "ارسال نوتیفیکیشن و پیام کوتاه",
     subtitle: `
-ارسال نوتیفیکیشن در هنگام ثبت غیبت  ، تاخیر ، ثبت ارزشیابی ، پیام ها و رویداد های مهم و ...
+    ارسال نوتیفیکیشن در هنگام ثبت غیبت  ، تاخیر ، ثبت ارزشیابی ، پیام ها و رویداد های مهم و✓
 
-اطلاع رسانی ساده و سریع و بدون هزینه به دانش آموزان و والدین
+اطلاع رسانی ساده و سریع و بدون هزینه به دانش آموزان و والدین✓
 `,
 
     buttonTitle: "order",
@@ -27,9 +28,9 @@ const slides = [
     imageh: 400,
     id: 2,
     title: "ارسال نوتیفیکیشن و پیام کوتاه",
-    subtitle: `
+    subtitle: `✓
 ارسال نوتیفیکیشن و پیامک به صورت اختصاصی و یا گروهی به کلاس یا گروه های دانش آموزی
-
+✓
 مشاهده گزارشات دریافت یا عدم دریافت نوتیفیکیشن`,
     buttonTitle: "order",
     image: "/images/ارسال-نوتیفیکیشن---نرم-افزار-مدارس1" + ".png",
@@ -120,7 +121,8 @@ export default function Notif({}: Props) {
                 {slides[slideIndex].title}
               </h2>
               <div
-                className="text-end flex text-slate-500 flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
+                style={{ whiteSpace: "pre-line" }}
+                className="text-end  flex text-slate-500 flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
               >
                 {slides[slideIndex].subtitle}

@@ -20,7 +20,7 @@ export default function NavMenu() {
   return (
     <nav className="  border-gray-200 ">
       {showMenu && (
-        <div className="w-full border top-14 h-screen z-50 bg-white absolute left-0">
+        <div className=" w-full border top-14 h-screen z-50 bg-white absolute left-0">
           <ul className="flex flex-col gap-8 justify-center items-center m-4 p-4">
             <li onClick={() => setShowMenu(false)}>
               <Link href="/">خانه</Link>
@@ -42,7 +42,7 @@ export default function NavMenu() {
           </ul>
         </div>
       )}
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0">
         <div
           onClick={() => setShowMenu(!showMenu)}
           className="block cursor-pointer "
@@ -60,7 +60,7 @@ export default function NavMenu() {
                 href="/"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#004138] rounded
+                text-[#08917f] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -73,7 +73,7 @@ export default function NavMenu() {
                 href="aboutus"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#004138] rounded
+                text-[#08917f] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -81,25 +81,25 @@ export default function NavMenu() {
                 درباره نرم پارس آموز
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="demo"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#004138] rounded
+                text-[#08917f] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
               >
                 درخواست دمو
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="agents"
                 className="block py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#004138] rounded
+                text-[#08917f] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"
@@ -113,7 +113,7 @@ export default function NavMenu() {
                 href="contact"
                 className="block  py-2 pl-3 pr-4
                 dark:text-slate-300
-                text-[#004138] rounded
+                text-[#08917f] rounded
                  hover:dark:bg-slate-800 
                  hover:text-slate-700
                   md:border-0"

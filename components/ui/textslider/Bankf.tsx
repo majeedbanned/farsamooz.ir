@@ -12,11 +12,9 @@ const slides = [
     id: 2,
     title: "بانک فایل",
     subtitle: `
-اشتراک گذاری فایهای مختلف در فرمت های گوناگون در بانک فایل
-
-فضای اختصاصی ذخیره سازی برای هرمعلم برای قراردادن فایل های درسی
-
-تعریف سطوح دسترسی برای محدود کردن دسترسی به فایل ها
+اشتراک گذاری فایهای مختلف در فرمت های گوناگون در بانک فایل ✓
+فضای اختصاصی ذخیره سازی برای هرمعلم برای قراردادن فایل های درسی ✓
+تعریف سطوح دسترسی برای محدود کردن دسترسی به فایل ها ✓
 
     `,
     buttonTitle: "order",
@@ -30,8 +28,7 @@ const slides = [
     id: 3,
     title: "بانک فایل",
     subtitle: `
-ذخیره فایل های گوناگون از طریق اپلیکیشن معلمین
-
+ذخیره فایل های گوناگون از طریق اپلیکیشن معلمین ✓
     `,
     buttonTitle: "order",
     image: "/images/بانک فایل1" + ".png",
@@ -122,6 +119,7 @@ export default function Bankf({}: Props) {
               <div
                 className="text-end flex text-white flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
+                style={{ whiteSpace: "pre-line" }}
               >
                 {slides[slideIndex]?.subtitle}
               </div>

@@ -12,13 +12,10 @@ const slides = [
     id: 2,
     title: " تغذیه اطلاعات از طریق اپ موبایل ",
     subtitle: `
-امکان دسترسی و ویرایش لیست دانش آموزان و معلمین از طریق اپ
-
-معرفی دانش آموزان برتر
-
-تغییر کلمه عبور و عکس دانش آموزان و معلمین 
-
-تعریف اخبار و اطلاعیه های مهم در صفحه اول اپ
+امکان دسترسی و ویرایش لیست دانش آموزان و معلمین از طریق اپ ✓
+معرفی دانش آموزان برتر ✓
+تغییر کلمه عبور و عکس دانش آموزان و معلمین ✓
+تعریف اخبار و اطلاعیه های مهم در صفحه اول اپ ✓
     `,
     buttonTitle: "order",
     image: "/images/ورود اطلاعات" + ".png",
@@ -143,6 +140,7 @@ export default function Info({}: Props) {
               <div
                 className="text-end flex text-[#096a7b] flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
+                style={{ whiteSpace: "pre-line" }}
               >
                 {slides[slideIndex]?.subtitle}
               </div>

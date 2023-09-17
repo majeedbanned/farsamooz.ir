@@ -12,13 +12,9 @@ const slides = [
     id: 1,
     title: "تقویم مدرسه- رویدادها ",
     subtitle: `
-
-تعریف رویداد های آتی مدرسه توسط کادر مدرسه و معلمین
-
-مشاهده رویداد ها بصورت تقویم بر روی اپ دانش آموزان
-
-تعریف برنامه آزمون ها در قسمت تقویم مدرسه
-    
+تعریف رویداد های آتی مدرسه توسط کادر مدرسه و معلمین ✓
+مشاهده رویداد ها بصورت تقویم بر روی اپ دانش آموزان ✓
+تعریف برنامه آزمون ها در قسمت تقویم مدرسه ✓
     `,
     buttonTitle: "order",
     image: "/images/events1" + ".png",
@@ -31,9 +27,7 @@ const slides = [
     id: 2,
     title: "تقویم مدرسه- رویدادها ",
     subtitle: `
-    مشاهده رویداد ها بصورت تقویم بر روی اپ دانش آموزان
-
-    
+    مشاهده رویداد ها بصورت تقویم بر روی اپ دانش آموزان ✓
     `,
     buttonTitle: "order",
     image: "/images/events2" + ".png",
@@ -46,10 +40,8 @@ const slides = [
     id: 3,
     title: "تقویم مدرسه- رویدادها ",
     subtitle: `
-   تعریف سطوح دسترسی برای مشاهده رویدادی ها مختلف
+   تعریف سطوح دسترسی برای مشاهده رویدادی ها مختلف ✓
 
-   
-    
     `,
     buttonTitle: "order",
     image: "/images/events3" + ".png",
@@ -142,6 +134,7 @@ export default function Events({}: Props) {
               <div
                 className="text-end flex text-purple-700 flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
+                style={{ whiteSpace: "pre-line" }}
               >
                 {slides[slideIndex]?.subtitle}
               </div>

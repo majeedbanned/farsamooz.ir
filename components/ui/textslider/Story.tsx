@@ -11,9 +11,8 @@ const slides = [
     id: 1,
     title: "استوری و گالری تصاویر",
     subtitle: `
-تعریف استوری های کوتاه به صورت عکس در اپلیکیشن 
-
-مشاهده به صورت گالری عکس 
+تعریف استوری های کوتاه به صورت عکس در اپلیکیشن ✓
+مشاهده به صورت گالری عکس ✓
 
     `,
     buttonTitle: "order",
@@ -28,9 +27,8 @@ const slides = [
     title: "استوری و گالری تصاویر",
 
     subtitle: `
-تعریف استوری های کوتاه به صورت عکس در اپلیکیشن 
-
-مشاهده به صورت گالری عکس 
+تعریف استوری های کوتاه به صورت عکس در اپلیکیشن ✓
+مشاهده به صورت گالری عکس ✓
 
     `,
     buttonTitle: "order",
@@ -45,9 +43,8 @@ const slides = [
     title: "استوری و گالری تصاویر",
 
     subtitle: `
-تعریف استوری های کوتاه به صورت عکس در اپلیکیشن 
-
-مشاهده به صورت گالری عکس 
+تعریف استوری های کوتاه به صورت عکس در اپلیکیشن ✓
+مشاهده به صورت گالری عکس ✓
 
     `,
     image: "/images/گالری-عکس3" + ".png",
@@ -140,6 +137,7 @@ export default function Story({}: Props) {
               <div
                 className="text-end flex text-white flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
+                style={{ whiteSpace: "pre-line" }}
               >
                 {slides[slideIndex]?.subtitle}
               </div>

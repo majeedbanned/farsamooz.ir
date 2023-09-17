@@ -8,7 +8,6 @@ export default function page({}: Props) {
       <br />
       <br />
       <br />
-      About us
     </div>
   );
 }

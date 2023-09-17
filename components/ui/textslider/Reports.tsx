@@ -12,9 +12,8 @@ const slides = [
     id: 1,
     title: "گزارشات مدیریتی و دانش آموزی",
     subtitle: `
-دسترسی به انواع گزارشات مدیریتی نظیر رتبه بندی کلاسی ، نفرات برتر ، غیبت ها ، تا خیر ها و دفتر کلاسی معلمین
-
-مشاهده لیست غیبت ها و تاخیر ها ی دانش آموز در اپ اختصاصی
+دسترسی به انواع گزارشات مدیریتی نظیر رتبه بندی کلاسی ، نفرات برتر ، غیبت ها ، تا خیر ها و دفتر کلاسی معلمین ✓
+مشاهده لیست غیبت ها و تاخیر ها ی دانش آموز در اپ اختصاصی ✓
 
     `,
     buttonTitle: "order",
@@ -28,8 +27,7 @@ const slides = [
     id: 2,
     title: "گزارشات مدیریتی و دانش آموزی",
     subtitle: `
-مشاهده ارزشیابی ها و نمرات کلاسی به تفکیک درس در اپلیکیشن دانش آموز
-
+مشاهده ارزشیابی ها و نمرات کلاسی به تفکیک درس در اپلیکیشن دانش آموز ✓
     `,
     buttonTitle: "order",
     image: "/images/گزارشات2" + ".png",
@@ -42,7 +40,7 @@ const slides = [
     id: 3,
     title: "گزارشات مدیریتی و دانش آموزی",
     subtitle: `
-مشاهده لیست غیبت ها و تاخیر ها در اپلیکیشن دانش آموز
+مشاهده لیست غیبت ها و تاخیر ها در اپلیکیشن دانش آموز ✓
     `,
     buttonTitle: "order",
     image: "/images/گزارشات3" + ".png",
@@ -167,6 +165,7 @@ export default function Reports({}: Props) {
               <div
                 className="text-end flex text-slate-600 flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
+                style={{ whiteSpace: "pre-line" }}
               >
                 {slides[slideIndex]?.subtitle}
               </div>

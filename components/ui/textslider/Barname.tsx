@@ -12,7 +12,7 @@ const slides = [
     id: 2,
     title: "برنامه کلاسی",
     subtitle: `
-دسترسی به برنامه هفتگی اختصاصی دانش آموز و معلم بر روی اپلیکیشن موبایل
+دسترسی به برنامه هفتگی اختصاصی دانش آموز و معلم بر روی اپلیکیشن موبایل ✓
     
     `,
     buttonTitle: "order",
@@ -137,6 +137,7 @@ export default function Barname({}: Props) {
               <div
                 className="text-end flex text-[#4891d5] flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
+                style={{ whiteSpace: "pre-line" }}
               >
                 {slides[slideIndex]?.subtitle}
               </div>

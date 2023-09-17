@@ -4,7 +4,7 @@ type Props = {};
 
 export default function Links({}: Props) {
   return (
-    <div style={{ marginTop: 10 }}>
+    <div className="" style={{ marginTop: 10 }}>
       <div
         style={{
           //  WebkitBoxPack: "space-between",
@@ -13,7 +13,7 @@ export default function Links({}: Props) {
           justifyContent: "space-between",
         }}
         className="
-        mx-4 gap-3
+        mx-0  gap-3
         mb-8
 sm:mx-0 sm:gap-0 
         utils__Flex-sc-1iydf9a-8 flex flex-row flex-wrap utils__VStack-sc-1iydf9a-19 dGEzVd kusjae"
