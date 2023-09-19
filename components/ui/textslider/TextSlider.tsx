@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Links from "./Links";
+import Script from "next/script";
 type Props = {};
 const slides = [
   {
@@ -71,6 +72,13 @@ export default function TextSlider({}: Props) {
   }, [slideIndex]);
   return (
     <div className="flex h-64 flex-col overflow-hidden lg:mt-12   ">
+      {/* <Script
+        src="../../../app/script.js"
+        strategy="lazyOnload"
+        onLoad={() =>
+          console.log(`script loaded correctly, window.FB has been populated`)
+        }
+      /> */}
       <div
         className="flex  flex-1 relative  w-full p-0  overflow-hidden
       flex-col

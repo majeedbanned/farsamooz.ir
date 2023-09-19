@@ -4,6 +4,7 @@ import ellipse from "@/svg/ellipse.svg";
 import localFont from "next/font/local";
 import Navbar from "../components/navbar/Navbar";
 import { cn } from "@/lib/utils";
+import Script from "next/script";
 // import ClientOnly from "@/lib/ClientOnly";
 
 const iransans = localFont({
@@ -56,12 +57,33 @@ export default async function Root({
       lang="fa"
       className={cn("antialiased  ", iransans.className)}
     >
+      <Script id="show-banner">
+        {`!(function () {
+  var i = "QSa1es",
+    a = window,
+    d = document;
+  function g() {
+    var g = d.createElement("script"),
+      s = "https://www.goftino.com/widget/" + i,
+      l = localStorage.getItem("goftino_" + i);
+    (g.async = !0), (g.src = l ? s + "?o=" + l : s);
+    d.getElementsByTagName("head")[0].appendChild(g);
+  }
+  "complete" === d.readyState
+    ? g()
+    : a.attachEvent
+    ? a.attachEvent("onload", g)
+    : a.addEventListener("load", g, !1);
+})();
+`}
+      </Script>
       {/* /${barlowCondensed.className} ${inter.className} ${merriweather.variable} ${roboto.className} ${iransans.className} font-sans/ */}
       {/* className={`${iransans.className}`}  */}
       <body className="antialiased  ">
         {/* <div className="  "> */}
         {/* <ClientOnly> */}
         {/* <Providers> */}
+
         <div
           className="  container  dark:bg-slate-900 overflow-hidden relative md:rounded-2xl  mx-auto  bg-white md:mt-14 mb-52  
                       shadow-[0_8px_30px_rgb(0,0,0,0.08)]  first-letter:
