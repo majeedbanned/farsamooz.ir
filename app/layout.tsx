@@ -28,7 +28,12 @@ const iransans = localFont({
   ],
   variable: "--font-iransans",
 });
+
 export const metadata = {
+  alternates: {
+    canonical: "https://farsamooz.ir",
+  },
+
   appLinks: {
     ios: {
       url: "https://sibche.com/applications/pamooz",
@@ -99,10 +104,6 @@ export default async function Root({
       lang="fa"
       className={cn("antialiased  ", iransans.className)}
     >
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-163572893-1"
-      ></script>
       <Script id="show-banner">
         {`!(function () {
   var i = "QSa1es",
