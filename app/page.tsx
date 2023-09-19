@@ -20,10 +20,21 @@ import Bankf from "@/components/ui/textslider/Bankf";
 import Info from "@/components/ui/textslider/Info";
 import Links from "@/components/ui/textslider/Links";
 import ClientOnly from "@/ClientOnly";
+import Script from "next/script";
 
 export default async function IndexPage() {
   return (
     <div className="z-20  relative flex flex-col  ">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=UA-163572893-1" />
+      <Script id="google-analytics">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'UA-163572893-1');
+        `}
+      </Script>
       {/* <ClientOnly> */}
       <Section1></Section1>
       {/* </ClientOnly> */}

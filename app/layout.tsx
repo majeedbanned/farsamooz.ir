@@ -29,7 +29,49 @@ const iransans = localFont({
   variable: "--font-iransans",
 });
 export const metadata = {
-  title: "پارس آموز اتوماسیون و نرم افزار هوشمند مدیریت مدارس و آموزشگاه ها",
+  appLinks: {
+    ios: {
+      url: "https://sibche.com/applications/pamooz",
+      app_store_id: "app_store_id",
+    },
+    android: {
+      package:
+        "https://play.google.com/store/apps/details?id=com.arsis.parsamooz",
+      app_name: "com.arsis.parsamooz",
+    },
+    web: {
+      url: "https://farsamooz.ir",
+      should_fallback: true,
+    },
+  },
+
+  themeColor: "white",
+  openGraph: {
+    title:
+      "پارس آموز اتوماسیون و نرم افزار و اپلیکیشن هوشمند مدیریت مدارس و آموزشگاه ها",
+    description:
+      "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها دفتر کلاسی آزمون آنلاین اپلیکیشن هوشمند",
+    url: "https://farsamooz.ir/",
+    siteName: "Next.js",
+    images: [
+      {
+        url: "https://farsamooz.ir/_next/image?url=%2Fimages%2Fpapa.png&w=1080&q=75",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://farsamooz.ir/_next/image?url=%2Fimages%2Fpapa.png&w=1080&q=75",
+        width: 1800,
+        height: 1600,
+        alt: " نرم افزار و اپلیکیشن هوشمند مدیریت مدارس",
+      },
+    ],
+    locale: "fa_IR",
+    type: "website",
+  },
+  title:
+    "پارس آموز اتوماسیون و نرم افزار و اپلیکیشن هوشمند مدیریت مدارس و آموزشگاه ها",
+
   description:
     "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها دفتر کلاسی آزمون آنلاین اپلیکیشن هوشمند",
 };
@@ -57,6 +99,10 @@ export default async function Root({
       lang="fa"
       className={cn("antialiased  ", iransans.className)}
     >
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-163572893-1"
+      ></script>
       <Script id="show-banner">
         {`!(function () {
   var i = "QSa1es",
