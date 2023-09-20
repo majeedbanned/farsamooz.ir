@@ -131,7 +131,7 @@ export default function Section1({}: Props) {
       </div>
       <div className="flex flex-col border-spacing-0 gap-2 flex-1">
         <div className="flex justify-end ">
-          <h1 className="sm:mr-0 mt-16 text-2xl text-center text-orange-500 leading-normal">
+          <h1 className="sm:mr-0 mt-16  text-center">
             پارس آموز نرم افزار هوشمند مدارس و مراکز آموزشی
           </h1>
         </div>

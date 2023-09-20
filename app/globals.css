@@ -17,6 +17,8 @@
 }
 
 body {
+
+  font-family: var(--font-YekanBakhRegular);
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+h1{
+  font-family: var(--font-YekanBakhExtraBlack);
+  font-size:48px !important;
+  line-height: 88px !important;
+  font-weight: 800 !important;
+  color: #334155;
+}
+h2{
+  font-family: var(--font-YekanBakhExtraBlack);
+  font-size:30px !important;
+  line-height: 88px !important;
+  font-weight: 800 !important;
+  color: #334155;
 }

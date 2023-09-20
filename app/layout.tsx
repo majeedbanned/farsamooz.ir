@@ -7,26 +7,40 @@ import { cn } from "@/lib/utils";
 import Script from "next/script";
 // import ClientOnly from "@/lib/ClientOnly";
 
-const iransans = localFont({
-  src: [
-    // {
-    //   path: "../../public/fonts/IRANSansWeb.eot",
-    //   weight: "400",
-    // },
-    {
-      path: "../public/fonts/IRANSansWeb.ttf",
-      weight: "400",
-    },
-    {
-      path: "../public/fonts/IRANSansWeb.woff",
-      weight: "700",
-    },
-    {
-      path: "../public/fonts/IRANSansWeb.woff2",
-      weight: "700",
-    },
-  ],
-  variable: "--font-iransans",
+// const iransans = localFont({
+//   src: [
+//     // {
+//     //   path: "../../public/fonts/IRANSansWeb.eot",
+//     //   weight: "400",
+//     // },
+//     {
+//       path: "../public/fonts/IRANSansWeb.ttf",
+//       weight: "400",
+//     },
+//     {
+//       path: "../public/fonts/IRANSansWeb.woff",
+//       weight: "700",
+//     },
+//     {
+//       path: "../public/fonts/IRANSansWeb.woff2",
+//       weight: "700",
+//     },
+//   ],
+//   variable: "--font-iransans",
+// });
+
+const YekanBakhRegular = localFont({
+  src: "../public/fonts/YekanBakh-Regular.woff2",
+  variable: "--font-YekanBakhRegular",
+});
+// const YekanBakhExtraBold = localFont({
+//   src: "../public/fonts/YekanBakh-ExtraBold.woff2",
+//   variable: "--font-YekanBakhExtraBold",
+// });
+
+const YekanBakhExtraBlack = localFont({
+  src: "../public/fonts/YekanBakh-ExtraBlack.woff2",
+  variable: "--font-YekanBakhExtraBlack",
 });
 
 export const metadata = {
@@ -52,8 +66,7 @@ export const metadata = {
 
   themeColor: "white",
   openGraph: {
-    title:
-      "پارس آموز اتوماسیون و نرم افزار و اپلیکیشن هوشمند مدیریت مدارس و آموزشگاه ها",
+    title: "پارس آموز نرم افزار و اپلیکیشن هوشمند مدیریت مدارس و آموزشگاه ها",
     description:
       "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها دفتر کلاسی آزمون آنلاین اپلیکیشن هوشمند",
     url: "https://farsamooz.ir/",
@@ -102,7 +115,7 @@ export default async function Root({
       // lang={params.lang}
       dir="ltr"
       lang="fa"
-      className={cn("antialiased  ", iransans.className)}
+      //*** */ className={cn("antialiased  ", iransans.className)}
     >
       <Script id="show-banner">
         {`!(function () {
@@ -126,13 +139,20 @@ export default async function Root({
       </Script>
       {/* /${barlowCondensed.className} ${inter.className} ${merriweather.variable} ${roboto.className} ${iransans.className} font-sans/ */}
       {/* className={`${iransans.className}`}  */}
-      <body className="antialiased  ">
+      {/* <body className="antialiased  "> */}
+      <body
+        className={`antialiased ${YekanBakhRegular.variable} 
+        ${YekanBakhExtraBlack.variable}
+        `}
+      >
         {/* <div className="  "> */}
         {/* <ClientOnly> */}
         {/* <Providers> */}
-
+        {/* //          */}
         <div
-          className="  container  dark:bg-slate-900 overflow-hidden relative md:rounded-2xl  mx-auto  bg-white md:mt-14 mb-52  
+          className="  container  dark:bg-slate-900 overflow-hidden relative md:rounded-2xl  mx-auto  bg-[#f3f4f5] md:mt-14 
+          lg:mt-0 lg:rounded-sm xl:mt-14 xl:rounded-2xl 
+           mb-52  
                       shadow-[0_8px_30px_rgb(0,0,0,0.08)]  first-letter:
                  "
         >
