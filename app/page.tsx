@@ -23,6 +23,27 @@ import ClientOnly from "@/ClientOnly";
 import Script from "next/script";
 
 export default async function IndexPage() {
+  const jsonLd = {
+    "@context": "http://schema.org/",
+    "@type": "Product",
+    name: "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
+    image:
+      "https://farsamooz.ir/_next/image?url=%2Fimages%2Fpapa.png&w=1080&q=75",
+    description:
+      "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها. دفتر کلاسی مدرسه, آزمون آنلاین , اپلیکیشن هوشمند , فرم ساز , بانک سوالات ,آموزش مجازی ,حضور و غیاب ,ارسال نوتیفیکیشن",
+    brand: {
+      "@type": "Brand",
+      name: "پارس آموز",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      ratingCount: "5",
+      reviewCount: "120",
+      worstRating: "0",
+      bestRating: "5",
+    },
+  };
   return (
     <div className="z-20  relative flex flex-col  ">
       <Script src="https://www.googletagmanager.com/gtag/js?id=UA-163572893-1" />
@@ -35,6 +56,12 @@ export default async function IndexPage() {
             gtag('config', 'UA-163572893-1');
         `}
       </Script>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* <ClientOnly> */}
       <Section1></Section1>
       {/* </ClientOnly> */}
