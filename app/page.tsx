@@ -44,6 +44,22 @@ export default async function IndexPage() {
       bestRating: "5",
     },
   };
+
+  const jld2 = {
+    "@context": "http://schema.org/",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "پارس آموز چیست؟",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: " پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت  یک مدرسه است",
+        },
+      },
+    ],
+  };
+
   return (
     <div className="z-20  relative flex flex-col  ">
       <Script src="https://www.googletagmanager.com/gtag/js?id=UA-163572893-1" />
@@ -60,6 +76,11 @@ export default async function IndexPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jld2) }}
       />
 
       {/* <ClientOnly> */}
