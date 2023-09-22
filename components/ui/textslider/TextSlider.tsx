@@ -108,7 +108,7 @@ export default function TextSlider({}: Props) {
                 {slides[slideIndex].title}
               </motion.h3>
 
-              <motion.h3
+              <motion.p
                 className="leading-loose flex text-slate-600 rtl items-center mx-1 text-right my-2 justify-end  sm:text-xl  text-md"
                 key={"d" + slideIndex}
                 initial="enter"
@@ -119,7 +119,7 @@ export default function TextSlider({}: Props) {
                 transition={{ delay: 0.1 }}
               >
                 {slides[slideIndex].subtitle}
-              </motion.h3>
+              </motion.p>
               {/* <motion.h2
                 className=" flex items-center text-right justify-end my-2 w-full  text-xl"
                 key={slideIndex}
