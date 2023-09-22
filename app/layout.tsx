@@ -87,11 +87,10 @@ export const metadata = {
     locale: "fa_IR",
     type: "website",
   },
-  title:
-    "پارس آموز اتوماسیون و نرم افزار و اپلیکیشن هوشمند مدیریت مدارس و آموزشگاه ها",
+  title: "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
 
   description:
-    "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها دفتر کلاسی آزمون آنلاین اپلیکیشن هوشمند",
+    " نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها. دفتر کلاسی مدرسه, آزمون آنلاین , اپلیکیشن هوشمند , فرم ساز , بانک سوالات ,آموزش مجازی ,حضور و غیاب ,ارسال نوتیفیکیشن",
 };
 
 // export async function generateStaticParams() {
@@ -117,6 +116,68 @@ export default async function Root({
       lang="fa"
       //*** */ className={cn("antialiased  ", iransans.className)}
     >
+      <Script id="faq" type="application/ld+json">
+        {`"@context": "http://schema.org/",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "پارس آموز چیست؟",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": " پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت  یک مدرسه است"
+			}
+		}
+	]`}
+      </Script>
+
+      <Script id="rating" type="application/ld+json">
+        {`"@context": "http://schema.org/",
+	"@type": "Product",
+	"name": "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
+	"image": "https://farsamooz.ir/_next/image?url=%2Fimages%2Fpapa.png&w=1080&q=75",
+	"description": "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها. دفتر کلاسی مدرسه, آزمون آنلاین , اپلیکیشن هوشمند , فرم ساز , بانک سوالات ,آموزش مجازی ,حضور و غیاب ,ارسال نوتیفیکیشن
+",
+	"brand": {
+		"@type": "Brand",
+		"name": "پارس آموز"
+	},
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingValue" : "5",
+		"ratingCount" : "5",
+		"reviewCount" : "120",
+		"worstRating" : "0",
+		"bestRating" : "5"
+	}`}
+      </Script>
+
+      <Script type="application/ld+json" id="org">
+        {`"@context": "http://schema.org/",
+	"@type": "Organization",
+	"name": "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
+	"logo": "https://farsamooz.ir/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F%D9%BE%D8%A7%D8%B1%D8%B3%20%D8%A2%D9%85%D9%88%D8%B2%20%D8%A7%D8%AA%D9%88%D9%85%D8%A7%D8%B3%DB%8C%D9%88%D9%86%20%D9%86%D8%B1%D9%85%20%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%20%D9%87%D9%88%D8%B4%D9%85%D9%86%D8%AF%20%D9%85%D8%AF%D8%A7%D8%B1%D8%B3.a021f10a.png&w=384&q=75",
+	"url": "https://farsamooz.ir/",
+	"address": {
+		"@type": "PostalAddress",
+		"addressLocality": "Tehran",
+		"addressRegion": "Tehran",
+		"postalCode": "989177204118",
+		"addressCountry": "Iran"
+	},
+	"sameAs": []`}
+      </Script>
+
+      <Script type="application/ld+json" id="search">
+        {`	"@context": "http://schema.org/",
+	"@type": "WebSite",
+	"url": "https://farsamooz.ir",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "search?q={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}`}
+      </Script>
       <Script id="show-banner">
         {`!(function () {
   var i = "QSa1es",

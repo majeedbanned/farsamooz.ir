@@ -41,3 +41,10 @@ h2{
   font-weight: 800 !important;
   color: #334155;
 }
+h3{
+  font-family: var(--font-YekanBakhExtraBlack);
+  font-size:30px !important;
+  line-height: 88px !important;
+  font-weight: 800 !important;
+  color: #334155;
+}

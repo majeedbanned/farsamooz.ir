@@ -26,6 +26,7 @@ sm:mx-0 sm:gap-0
          
           DownloadBox___StyledA-sc-t74c4l-5 eHIRVF"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +77,7 @@ sm:mx-0 sm:gap-0
        
         DownloadBox___StyledA-sc-t74c4l-5 eHIRVF"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +108,7 @@ sm:mx-0 sm:gap-0
        
         DownloadBox___StyledA-sc-t74c4l-5 eHIRVF"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -127,6 +130,7 @@ sm:mx-0 sm:gap-0
        
         DownloadBox___StyledA-sc-t74c4l-5 eHIRVF"
           target="_blank"
+          rel="noopener"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -95,7 +95,7 @@ export default function TextSlider({}: Props) {
               exit="exit"
               className="absolute   w-full h-auto"
             >
-              <motion.h2
+              <motion.h3
                 className="leading-normal flex text-[#009B87] items-center  w-full space-y-4 justify-end sm:text-2xl text-2xl"
                 key={"c" + slideIndex}
                 initial="enter"
@@ -106,7 +106,7 @@ export default function TextSlider({}: Props) {
                 //   transition={{ damping: 10 }}
               >
                 {slides[slideIndex].title}
-              </motion.h2>
+              </motion.h3>
 
               <motion.h3
                 className="leading-loose flex text-slate-600 rtl items-center mx-1 text-right my-2 justify-end  sm:text-xl  text-md"

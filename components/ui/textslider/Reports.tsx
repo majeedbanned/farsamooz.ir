@@ -159,9 +159,9 @@ export default function Reports({}: Props) {
             className="   border-red-400 flex justify-center items-center  flex-1 flex-col overflow-hidden  h-auto"
           >
             <div className="border-0 mx-2 mt-8  sm:mx-12">
-              <h2 className="text-2xl mb-8 text-center text-slate-700">
+              <h3 className="text-2xl mb-8 text-center text-slate-700">
                 {slides[slideIndex]?.title}
-              </h2>
+              </h3>
               <div
                 className="text-end flex text-slate-600 flex-1 items-center px-2 my-2 mb-4 justify-start  w-full sm:text-lg text-md "
                 key={slideIndex}
