@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import Navbar from "../components/navbar/Navbar";
 import { cn } from "@/lib/utils";
 import Script from "next/script";
+import Head from "next/head";
 // import ClientOnly from "@/lib/ClientOnly";
 
 // const iransans = localFont({
@@ -131,7 +132,7 @@ export default async function Root({
 	]`}
       </Script>
 
-      <Script id="rating" type="application/ld+json">
+      {/* <Script id="rating" type="application/ld+json">
         {`"@context": "http://schema.org/",
 	"@type": "Product",
 	"name": "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
@@ -150,7 +151,7 @@ export default async function Root({
 		"worstRating" : "0",
 		"bestRating" : "5"
 	}`}
-      </Script>
+      </Script> */}
 
       <Script type="application/ld+json" id="org">
         {`"@context": "http://schema.org/",
@@ -201,6 +202,32 @@ export default async function Root({
       {/* /${barlowCondensed.className} ${inter.className} ${merriweather.variable} ${roboto.className} ${iransans.className} font-sans/ */}
       {/* className={`${iransans.className}`}  */}
       {/* <body className="antialiased  "> */}
+      <Head>
+        <script
+          key="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(`"@context": "http://schema.org/",
+        "@type": "Product",
+        "name": "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
+        "image": "https://farsamooz.ir/_next/image?url=%2Fimages%2Fpapa.png&w=1080&q=75",
+        "description": "نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها. دفتر کلاسی مدرسه, آزمون آنلاین , اپلیکیشن هوشمند , فرم ساز , بانک سوالات ,آموزش مجازی ,حضور و غیاب ,ارسال نوتیفیکیشن
+      ",
+        "brand": {
+          "@type": "Brand",
+          "name": "پارس آموز"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue" : "5",
+          "ratingCount" : "5",
+          "reviewCount" : "120",
+          "worstRating" : "0",
+          "bestRating" : "5"
+        }`),
+          }}
+        />
+      </Head>
       <body
         className={`antialiased ${YekanBakhRegular.variable} 
         ${YekanBakhExtraBlack.variable}
