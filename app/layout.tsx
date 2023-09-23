@@ -131,7 +131,6 @@ export default async function Root({
 		}
 	]`}
       </Script> */}
-
       {/* <Script id="rating" type="application/ld+json">
         {`"@context": "http://schema.org/",
 	"@type": "Product",
@@ -152,7 +151,6 @@ export default async function Root({
 		"bestRating" : "5"
 	}`}
       </Script> */}
-
       {/* <Script type="application/ld+json" id="org">
         {`"@context": "http://schema.org/",
 	"@type": "Organization",
@@ -168,7 +166,6 @@ export default async function Root({
 	},
 	"sameAs": []`}
       </Script> */}
-
       {/* <Script type="application/ld+json" id="search">
         {`	"@context": "http://schema.org/",
 	"@type": "WebSite",
@@ -202,7 +199,25 @@ export default async function Root({
       {/* /${barlowCondensed.className} ${inter.className} ${merriweather.variable} ${roboto.className} ${iransans.className} font-sans/ */}
       {/* className={`${iransans.className}`}  */}
       {/* <body className="antialiased  "> */}
-
+      <link
+        rel="apple-touch-icon"
+        href="images/apple-touch-icon-iphone-60x60.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="60x60"
+        href="images/apple-touch-icon-ipad-76x76.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="114x114"
+        href="images/apple-touch-icon-iphone-retina-120x120.png"
+      />
+      <link
+        rel="apple-touch-icon"
+        sizes="144x144"
+        href="images/apple-touch-icon-ipad-retina-152x152.png"
+      />
       <body
         className={`antialiased ${YekanBakhRegular.variable} 
         ${YekanBakhExtraBlack.variable}
