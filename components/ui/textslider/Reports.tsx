@@ -126,7 +126,7 @@ export default function Reports({}: Props) {
           <Image
             //placeholder="blur"
             src={slides[slideIndex]?.image || ""}
-            alt={slides[slideIndex]?.rel}
+            alt={slides[slideIndex]?.rel + " نرم افزار مدرسه"}
             className="object-contain  "
             width={slides[slideIndex]?.imagew}
             height={slides[slideIndex]?.imageh}

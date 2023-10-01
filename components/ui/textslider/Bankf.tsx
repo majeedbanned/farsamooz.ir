@@ -157,7 +157,7 @@ export default function Bankf({}: Props) {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
-            alt={slides[slideIndex]?.rel}
+            alt={slides[slideIndex]?.rel + " نرم افزار مدرسه"}
           ></Image>
         </motion.div>
       </div>

@@ -106,7 +106,7 @@ export default function Section1({}: Props) {
           className="  flex-1 grid-flow-row  h-[550px] "
         >
           <Image
-            alt={slides[slideIndex]?.rel}
+            alt={slides[slideIndex]?.rel + " نرم افزار مدرسه"}
             //placeholder="blur"
             className=" sm:m-6   "
             src={slides[slideIndex]?.image || ""}
