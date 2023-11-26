@@ -45,7 +45,10 @@ export default function Videos() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Link href={"/videos/login"}>
+          <Link
+            title="آموزش احراز هویت در اپلیکیشن و نرم افزار مدارس پارس آموز"
+            href={"/videos/login"}
+          >
             <Image
               //placeholder="blur"
               src="/images/احراز.png"
