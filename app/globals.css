@@ -29,7 +29,7 @@ body {
 }
 h1{
   font-family: var(--font-YekanBakhExtraBlack);
-  font-size:48px !important;
+  font-size:48px ;
   line-height: 88px !important;
   font-weight: 800 !important;
   color: #334155;

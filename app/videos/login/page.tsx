@@ -27,20 +27,25 @@ export default function page({}: Props) {
   };
 
   return (
-    <div className="w-full h-screen flex justify-end">
+    <div className="w-full h-[1024px] flex justify-end">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className=" m-2 w-full z-50 flex justify-start items-end flex-col">
-        <h1>آموزش احراز هویت در اپلیکیشن و نرم افزار مدارس پارس آموز</h1>
+      <div className="  m-2 w-full h-screen z-50 flex justify-start items-center flex-col">
+        <h1 className="lg:text-3xl text-lg">
+          آموزش احراز هویت در اپلیکیشن و نرم افزار مدارس پارس آموز
+        </h1>
         <ReactPlayer
           width="100%"
-          height="100%"
+          height="600px"
           playing={true}
           controls={true}
           url="https://dl.farsamooz.ir/hlp/login.mp4"
         />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );
