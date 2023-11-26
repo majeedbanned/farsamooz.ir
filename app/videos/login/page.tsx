@@ -10,7 +10,8 @@ export default function page({}: Props) {
     "@type": "VideoObject",
     name: "احراز هویت در نرم افزار مدرسه پارس آموز",
     description: "آموزش احراز هویت در اپلیکیشن و نرم افزار مدارس پارس آموز.",
-    thumbnailUrl: "https://farsamooz.ir/",
+    thumbnailUrl:
+      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%A7%D8%AD%D8%B1%D8%A7%D8%B2.png&w=828&q=75",
     uploadDate: "2023-01-01T12:00:00Z",
     duration: "PT10M30S",
     embedUrl: "https://arsamooz.ir/videos/login",
