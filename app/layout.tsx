@@ -88,8 +88,7 @@ export const metadata = {
     locale: "fa_IR",
     type: "website",
   },
-  title:
-    "   نرم افزار مدرسه پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
+  title: "    پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
 
   description:
     "| نرم افزار مدرسه نرم افزار و اپلیکیشن مدیریت مدارس و آموزشگاه ها. دفتر کلاسی مدرسه, آزمون آنلاین , اپلیکیشن هوشمند , فرم ساز , بانک سوالات ,آموزش مجازی ,حضور و غیاب ,ارسال نوتیفیکیشن",
@@ -229,8 +228,8 @@ export default async function Root({
         {/* <Providers> */}
         {/* //          */}
         <div
-          className="  container  dark:bg-slate-900 overflow-hidden relative md:rounded-2xl  mx-auto  bg-[#f3f4f5] md:mt-14 
-          lg:mt-0 lg:rounded-sm xl:mt-14 xl:rounded-2xl 
+          className="    dark:bg-slate-900 overflow-hidden relative   mx-auto  bg-[#f3f4f5]  
+          lg:mt-0 
            mb-52  
                       shadow-[0_8px_30px_rgb(0,0,0,0.08)]  first-letter:
                  "

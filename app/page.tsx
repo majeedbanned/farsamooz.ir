@@ -1,12 +1,6 @@
-import TextSlider from "@/components/ui/textslider/TextSlider";
-import orange from "../../public/images/grape.png";
-import Image from "next/image";
 import Section1 from "../components/Section1";
-import { redirect } from "next/navigation";
-import Section2 from "@/components/Section2";
 import Features from "@/components/ui/Features";
 import Azmoon from "@/components/ui/textslider/Azmoon";
-import AppSlider2 from "@/components/ui/textslider/AppSlider2";
 import Daftar from "@/components/ui/textslider/Daftar";
 import Notif from "@/components/ui/textslider/Notif";
 import Message from "@/components/ui/textslider/Message";
@@ -18,9 +12,8 @@ import Reports from "@/components/ui/textslider/Reports";
 import Barname from "@/components/ui/textslider/Barname";
 import Bankf from "@/components/ui/textslider/Bankf";
 import Info from "@/components/ui/textslider/Info";
-import Links from "@/components/ui/textslider/Links";
-import ClientOnly from "@/ClientOnly";
 import Script from "next/script";
+import Videos from "@/components/Videos";
 
 export default async function IndexPage() {
   const jsonLd = {
@@ -89,6 +82,11 @@ export default async function IndexPage() {
       <section id="Features">
         <Features></Features>
       </section>
+
+      <section id="Swiper">
+        <Videos></Videos>
+      </section>
+
       <section id="Notif">
         <Notif></Notif>
       </section>
