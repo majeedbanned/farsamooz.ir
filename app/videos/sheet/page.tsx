@@ -12,7 +12,7 @@ export default function page({}: Props) {
     description:
       "  آموزش دفتر کلاسی برای معلمین در اپلیکیشن و نرم افزار مدارس پارس آموز.",
     thumbnailUrl:
-      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%A7%D8%AD%D8%B1%D8%A7%D8%B2.png&w=828&q=75",
+      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%AF%D9%81%D8%AA%D8%B1-%DA%A9%D9%84%D8%A7%D8%B3%DB%8C-%D9%85%D8%B9%D9%84%D9%85%DB%8C%D9%86.png&w=828&q=75",
     uploadDate: "2023-01-01T12:00:00Z",
     duration: "PT10M30S",
     embedUrl: "https://arsamooz.ir/videos/sheet",

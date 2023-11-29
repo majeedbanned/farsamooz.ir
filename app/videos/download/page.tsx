@@ -11,7 +11,7 @@ export default function page({}: Props) {
     name: " آموزش دانلود و نصب  نرم افزار مدرسه پارس آموز",
     description: "  آموزش دانلود و نصب اپلیکیشن و نرم افزار مدارس پارس آموز.",
     thumbnailUrl:
-      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%A7%D8%AD%D8%B1%D8%A7%D8%B2.png&w=828&q=75",
+      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%A7%D9%BE%D9%84%DB%8C%DA%A9%DB%8C%D8%B4%D9%86-%D9%BE%D8%A7%D8%B1%D8%B3-%D8%A2%D9%85%D9%88%D8%B2.png&w=828&q=75",
     uploadDate: "2023-01-01T12:00:00Z",
     duration: "PT10M30S",
     embedUrl: "https://arsamooz.ir/videos/download",

@@ -40,5 +40,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'weekly',
     priority: 0.5,
   },
+  {
+    url: 'https://farsamooz.ir/videos/sheet',
+  lastModified: new Date(),
+  changeFrequency: 'weekly',
+  priority: 0.5,
+},
+{
+  url: 'https://farsamooz.ir/videos/download',
+lastModified: new Date(),
+changeFrequency: 'weekly',
+priority: 0.5,
+},
   ]
 }
