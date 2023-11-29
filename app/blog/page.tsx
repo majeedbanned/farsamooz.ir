@@ -9,8 +9,7 @@ export default function page({}: Props) {
       <header>
         <h1>Your Blog Post Title</h1>
         <p>
-          Published on <time datetime="2023-01-01">January 1, 2023</time> by
-          Your Name
+          Published on <time>January 1, 2023</time> by Your Name
         </p>
       </header>
       <article>
