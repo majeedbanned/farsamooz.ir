@@ -76,6 +76,22 @@ export default function Videos() {
             ></Image>
           </Link>
         </SwiperSlide>
+
+        <SwiperSlide>
+          <Link
+            title="آموزش دانلود و نصب  اپلیکیشن و نرم افزار مدارس پارس آموز"
+            href={"/videos/download"}
+          >
+            <Image
+              src="/images/دانلود-اپلیکیشن-پارس-آموز.png"
+              alt={"آموزش دانلود و نصب اپلیکیشن و نرم افزار مدارس پارس آموز"}
+              className="object-contain "
+              width={400}
+              height={700}
+            ></Image>
+          </Link>
+        </SwiperSlide>
+
         {/* <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
