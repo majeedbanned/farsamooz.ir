@@ -92,6 +92,21 @@ export default function Videos() {
           </Link>
         </SwiperSlide>
 
+        <SwiperSlide>
+          <Link
+            title=" گزارشات دانش آموزی در اپلیکیشن و نرم افزار مدارس پارس آموز"
+            href={"/videos/reports"}
+          >
+            <Image
+              src="/images/گزارشات-دانش-آموزی.png"
+              alt={"گزارشات دانش آموزی در اپلیکیشن و نرم افزار مدارس پارس آموز"}
+              className="object-contain "
+              width={400}
+              height={700}
+            ></Image>
+          </Link>
+        </SwiperSlide>
+
         {/* <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>

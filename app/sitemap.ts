@@ -52,5 +52,11 @@ lastModified: new Date(),
 changeFrequency: 'weekly',
 priority: 0.5,
 },
+{
+  url: 'https://farsamooz.ir/videos/reports',
+lastModified: new Date(),
+changeFrequency: 'weekly',
+priority: 0.5,
+},
   ]
 }
