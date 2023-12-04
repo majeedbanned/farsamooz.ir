@@ -12,7 +12,7 @@ export default function page({}: Props) {
     description:
       " گزارشات دانش آموزی برای مدیر و معاونین در نرم افزار مدرسه پارس آموز",
     thumbnailUrl:
-      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%AF%D9%81%D8%AA%D8%B1-%DA%A9%D9%84%D8%A7%D8%B3%DB%8C-%D9%85%D8%B9%D9%84%D9%85%DB%8C%D9%86.png&w=828&q=75",
+      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%DA%AF%D8%B2%D8%A7%D8%B1%D8%B4%D8%A7%D8%AA-%D8%AF%D8%A7%D9%86%D8%B4-%D8%A2%D9%85%D9%88%D8%B2%DB%8C.png&w=828&q=75",
     uploadDate: "2023-01-01T12:00:00Z",
     duration: "PT10M30S",
     embedUrl: "https://arsamooz.ir/videos/reports",
@@ -34,7 +34,7 @@ export default function page({}: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="  m-2 w-full h-screen z-50 flex justify-start items-center flex-col">
-        <h1 className="lg:text-3xl text-lg">
+        <h1 className="lg:text-3xl text-xl leading-3 text-center text-[#278faf]">
           گزارشات دانش آموزی برای مدیر و معاونین در اپلیکیشن و نرم افزار مدارس
           پارس آموز
         </h1>

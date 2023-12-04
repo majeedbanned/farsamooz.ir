@@ -33,7 +33,7 @@ export default function page({}: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="  m-2 w-full h-screen z-50 flex justify-start items-center flex-col">
-        <h1 className="lg:text-3xl text-lg">
+        <h1 className="lg:text-3xl text-xl leading-3 text-center text-[#278faf]">
           آموزش احراز هویت در اپلیکیشن و نرم افزار مدارس پارس آموز
         </h1>
         <ReactPlayer
