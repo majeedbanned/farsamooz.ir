@@ -12,7 +12,7 @@ export default function page({}: Props) {
     description:
       "  چگونه در کوتاه ترین زمان یک آزمون کاغذی برگزار کنیم و با دوربین موبایل خود پاسخنامه ها را تصحیح کنیم.",
     thumbnailUrl:
-      "https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%AF%D9%81%D8%AA%D8%B1-%DA%A9%D9%84%D8%A7%D8%B3%DB%8C-%D9%85%D8%B9%D9%84%D9%85%DB%8C%D9%86.png&w=828&q=75",
+      "https://farsamooz.ir/_next/https://farsamooz.ir/_next/image?url=%2Fimages%2F%D8%AA%D8%B5%D8%AD%DB%8C%D8%AD-%D9%BE%D8%A7%D8%B3%D8%AE%D9%86%D8%A7%D9%85%D9%87-%D8%A8%D8%A7-%D8%AF%D9%88%D8%B1%D8%A8%DB%8C%D9%86-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84.png&w=828&q=75",
     uploadDate: "2023-01-01T12:00:00Z",
     duration: "PT10M30S",
     embedUrl: "https://arsamooz.ir/videos/paperexam",
