@@ -46,6 +46,21 @@ export default function Videos() {
       >
         <SwiperSlide>
           <Link
+            title="آموزش آزمون های کاغذی و تصحیح پاسخنامه با دوربین موبایل در اپلیکیشن و نرم افزار مدارس پارس آموز"
+            href={"/videos/paperexam"}
+          >
+            <Image
+              //placeholder="blur"
+              src="/images/تصحیح-پاسخنامه-با-دوربین-موبایل.png"
+              alt={"تصحیح-پاسخنامه-با-دوربین-موبایل"}
+              className="object-contain "
+              width={400}
+              height={700}
+            ></Image>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link
             title="آموزش احراز هویت در اپلیکیشن و نرم افزار مدارس پارس آموز"
             href={"/videos/login"}
           >
