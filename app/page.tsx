@@ -19,7 +19,7 @@ export default async function IndexPage() {
   const jsonLd = {
     "@context": "http://schema.org/",
     "@type": "Product",
-    name: "پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
+    name: " 46250471 پارس آموز  نرم افزار و اپلیکیشن هوشمند مدیریت مدرسه",
     image:
       "https://farsamooz.ir/_next/image?url=%2Fimages%2Fpapa.png&w=1080&q=75",
     description:
